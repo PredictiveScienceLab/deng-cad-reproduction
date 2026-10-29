@@ -38,6 +38,6 @@ Unpublished bullet-point draft. [Open the Substack draft](https://ebilionis.subs
 
 - The unresolved item is the paired blind holes: diameter 8.5 mm, cylindrical depth 5 mm, total depth about 7.554 mm with the candidate’s drill tips. The frozen requirement did not specify whether the 5 mm included the tips. Keep the ambiguity rather than changing the interpretation after seeing the result.
 
-- Archive the original submission and evidence. Do not repair the candidate after the clock stops. Package the exact prompt, drawings, source, frozen rubric, result data and reproduction commands in a private repository.
+- Archive the original submission and evidence. Do not repair the candidate after the clock stops. Package the exact prompt, drawings, source, frozen rubric, result data and reproduction commands in a [private repository](https://github.com/PredictiveScienceLab/deng-cad-reproduction).
 
 - What this establishes: one coding-agent system completed almost all requirements of this drawing-reconstruction task in a short run. It does not establish reliability across tasks, manufacturing performance, human labor savings or a numerical speedup over the paper’s Onshape users. Tool conditions, feedback, scoring and review differ.
