@@ -1,0 +1,57 @@
+default_permissions = "deng"
+approval_policy = "never"
+web_search = "disabled"
+project_doc_max_bytes = 0
+
+[permissions.deng.filesystem]
+":root" = "deny"
+":minimal" = "read"
+":slash_tmp" = "deny"
+"@RUNTIME@" = "read"
+"@PROJECT@/sandbox/candidate/input" = "read"
+"@PROJECT@/sandbox/candidate/work" = "write"
+"@PROJECT@/sandbox/candidate/tmp" = "write"
+
+[permissions.deng.network]
+enabled = false
+
+[memories]
+use_memories = false
+generate_memories = false
+
+[shell_environment_policy]
+inherit = "none"
+experimental_use_profile = false
+
+[shell_environment_policy.set]
+"PATH" = "@RUNTIME@/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+"TMPDIR" = "@PROJECT@/sandbox/candidate/tmp"
+"PYTHONDONTWRITEBYTECODE" = "1"
+"PYTHONNOUSERSITE" = "1"
+"MPLCONFIGDIR" = "@PROJECT@/sandbox/candidate/tmp/matplotlib"
+"XDG_CACHE_HOME" = "@PROJECT@/sandbox/candidate/tmp/cache"
+"LANG" = "en_US.UTF-8"
+"LC_ALL" = "en_US.UTF-8"
+
+[features]
+apps = false
+plugins = false
+remote_plugin = false
+hooks = false
+browser_use = false
+browser_use_external = false
+computer_use = false
+multi_agent = false
+multi_agent_v2 = false
+memories = false
+image_generation = false
+skill_mcp_dependency_install = false
+skill_search = false
+tool_suggest = false
+shell_snapshot = false
+unbounded_connection_retries = false
+code_mode = false
+code_mode_host = true
+request_permissions_tool = false
+workspace_dependencies = false
+skip_host_skill_discovery = true

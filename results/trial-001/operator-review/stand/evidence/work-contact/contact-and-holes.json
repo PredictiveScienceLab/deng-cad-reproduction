@@ -1,0 +1,32 @@
+{
+  "shoulder_contact": {
+    "stand_face_index": 26,
+    "area": 58.421726124144364,
+    "common_area": 58.421726124144364,
+    "gap_distance_mm": 4.321223057804992e-13
+  },
+  "holes": [
+    {
+      "axis_y": -25,
+      "axis_z": -25,
+      "diameter_mm": 10,
+      "x_extent": [
+        120,
+        142
+      ],
+      "stand_intersection_volume_mm3": 0.0,
+      "main_intersection_volume_mm3": 0.0
+    },
+    {
+      "axis_y": 25,
+      "axis_z": -25,
+      "diameter_mm": 10,
+      "x_extent": [
+        120,
+        142
+      ],
+      "stand_intersection_volume_mm3": 0.0,
+      "main_intersection_volume_mm3": 0.0
+    }
+  ]
+}

@@ -1,0 +1,2731 @@
+{
+  "schema_version": 1,
+  "rubric_id": "deng-cad-2024-adapted61-v1",
+  "status": "frozen_v1_no_candidate_trial",
+  "source": {
+    "path": "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/source/deng-2024.pdf",
+    "sha256": "cf9f4d937e3b9f83d674b090403f17c6226d9cbe8391369008eefd287a93b13f",
+    "url": "https://felix-deng.github.io/files/papers/jmd24.pdf",
+    "doi": "10.1115/1.4063360",
+    "visually_inspected_pdf_pages_1based": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "render_dpi": 200,
+    "detail_render_dpi": 400
+  },
+  "scoring": {
+    "paper_claimed_denominator": 60,
+    "observed_label_count": 61,
+    "stage_counts": {
+      "1": 22,
+      "2": 14,
+      "3": 14,
+      "4": 11
+    },
+    "alternative_labels_not_additional_points": [
+      "S3D6-Alt"
+    ],
+    "adapted_denominator": 61,
+    "reconciliation_status": "unresolved_in_published_source",
+    "decision": "Retain every distinct numbered AppendixB criterion with unit weight; describe scores as adapted61-criterion results, not exact reproduction of the paper60-dimension scores.",
+    "numeric_criteria_count": 53,
+    "qualitative_criteria_count": 8,
+    "status_values": [
+      "correct",
+      "incorrect",
+      "absent",
+      "requires_review",
+      "inconclusive"
+    ],
+    "primary_metric": "confirmed_correct_count / 61",
+    "completeness": "confirmed_attempted_count / 61",
+    "conditional_correctness": "confirmed_correct_count / confirmed_attempted_count; null when no attempted items; state unresolved_attempt_count separately",
+    "unresolved_policy": "Never count unmeasured or ambiguous items as correct or shrink the fixed denominator. Report unresolved counts and optional score bounds separately. A missed automatic association is requires_review, not proof of absence.",
+    "attempted_definition": "The geometrically intended feature exists and can be associated with this criterion, even if incorrect. For a relational criterion all referenced features must exist; for stage-integrity items the relevant cumulative stage model must exist. Do not use candidate declarations as sole evidence.",
+    "full_acceptance": "All61criteria correct, required supplemental gates satisfied, clean rebuild/export integrity passed, and no unresolved required review items.",
+    "paper_comparison": "Record a frozen35-minute artifact; later completion has a separate timestamp and cannot replace it. CadQuery+feedback is an adaptation of the human Onshape workflow."
+  },
+  "tolerance_policy": {
+    "source_status": "The paper provides no numeric acceptance tolerance; every tolerance below is an explicit benchmark convention.",
+    "direct_and_exact_derived_linear_mm": 0.01,
+    "direct_angle_deg": 0.1,
+    "rounded_derived_linear": "Use the printed0.01mm rounding interval plus0.001mm numerical margin forS1D4,S1D13,S3D2.",
+    "derived_bore_area": "S3D1 uses the printed0.001mm2 rounding interval plus0.1mm2 numerical margin after qualified face association.",
+    "relational_linear_mm": 0.01,
+    "relational_angular_deg": 0.1,
+    "boolean_volume_mm3": "max(1e-9, 1e-8 * relevant_part_volume_mm3)",
+    "integer_dimensions": "Treat explicit integer nominal dimensions as exact targets subject to0.01mm comparison tolerance; do not invent a\u00b10.5mm rounding interval.",
+    "missing_or_ambiguous_feature": "requires_review or inconclusive; never automatic pass.",
+    "multiplicity": "Every specified instance must pass individually; aggregate with logicalAND.",
+    "registration": "Rigid registration of the complete assembly is allowed; scaling is forbidden. Component-relative placement must be preserved.",
+    "source_priority": "Participant AppendixA determines the task; AppendixB supplies equivalent grading measurements. When their equivalence is unresolved, preserve both evidence and uncertainty rather than overriding participant requirements."
+  },
+  "criteria": [
+    {
+      "id": "S1D1",
+      "stage": 1,
+      "description": "Large flange outer width and height",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 100,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_flange_outline",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D2",
+      "stage": 1,
+      "description": "Four large-flange mounting through-hole diameters",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm",
+        "multiplicity": 4
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_large_flange_holes",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": [],
+      "required_conditions": [
+        {
+          "id": "through",
+          "description": "All four mounting holes pass through the full thickness of their flange; diameter agreement alone is insufficient.",
+          "evaluation_method": "independent_hole_axis_geometry_and_end_openings_or_section_review",
+          "required_result": true
+        }
+      ]
+    },
+    {
+      "id": "S1D3",
+      "stage": 1,
+      "description": "Main tapered bore diameter at the large terminal face",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 45,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_bore",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Measure the main axial passage, not a mounting hole or outer cylinder."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D4",
+      "stage": 1,
+      "description": "Main tapered bore diameter where it meets the small-end counterbore",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 30.85,
+        "unit": "mm",
+        "interval": [
+          30.845,
+          30.855
+        ]
+      },
+      "tolerance": {
+        "kind": "rounded_interval",
+        "compare_to_interval": true,
+        "numerical_margin": 0.001,
+        "unit": "mm",
+        "rounding_half_width": 0.005
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "printed_rounded_derived_value",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_bore",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Participant drawing also gives the bore slope as 3 degrees; exact cone construction may produce 30.8498995936 mm."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D5",
+      "stage": 1,
+      "description": "Large-flange external corner radii",
+      "measurement_kind": "radius",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm",
+        "multiplicity": 4
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_flange_outline",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D6",
+      "stage": 1,
+      "description": "Large-flange mounting-hole center distances from adjacent outer edges",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 12,
+        "unit": "mm",
+        "multiplicity": 8,
+        "printed_multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_large_flange_holes",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Use center axes, as the grading note specifies. The minimum circular-hole-boundary distance is 7 mm and is not this measurement. Both directions and the complete symmetric pattern must agree.",
+        "Required measurement multiplicity expands the printed dimension classes across every repeated feature: all four holes or all five fins must be verified."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D7",
+      "stage": 1,
+      "description": "Straight main-body cylinder outside diameter",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 70,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_axis",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D8",
+      "stage": 1,
+      "description": "Large-flange thickness along the main axis",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_axis",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D9",
+      "stage": 1,
+      "description": "Straight cylindrical-body length between large-flange inner face and cone shoulder",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 70,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_axis",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Derived from participant axial stations 10 mm and 80 mm."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D10",
+      "stage": 1,
+      "description": "Tapered outer-body length between shoulder and small-flange inner face",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 50,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_outer_cone",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D11",
+      "stage": 1,
+      "description": "Small-flange thickness along the main axis",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 12,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_axis",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D12",
+      "stage": 1,
+      "description": "Outer cone diameter adjacent to the small flange",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 50,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_outer_cone",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D13",
+      "stage": 1,
+      "description": "Outer cone diameter at the shoulder adjoining the straight cylinder",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 62.28,
+        "unit": "mm",
+        "interval": [
+          62.275,
+          62.285
+        ]
+      },
+      "tolerance": {
+        "kind": "rounded_interval",
+        "compare_to_interval": true,
+        "numerical_margin": 0.001,
+        "unit": "mm",
+        "rounding_half_width": 0.005
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "printed_rounded_derived_value",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_outer_cone",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Participant drawing gives a 7 degree taper over 50 mm; exact construction gives 50 + 100*tan(7 degrees) = 62.2784560903 mm. Do not substitute the adjacent 70 mm cylinder diameter."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D14",
+      "stage": 1,
+      "description": "Small-flange external corner radii",
+      "measurement_kind": "radius",
+      "expected": {
+        "type": "numeric",
+        "value": 5,
+        "unit": "mm",
+        "multiplicity": 4
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_flange_outline",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D15",
+      "stage": 1,
+      "description": "Width of the small-end counterbore keyway/notch",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 5,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_section_and_measurement",
+      "automation_group": "stage1_keyway",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "The keyway lies above the central counterbore. This criterion does not specify an additional unsupported notch depth."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D16",
+      "stage": 1,
+      "description": "Vertical distance from small-flange top edge to the top of its keyway/notch",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_section_and_measurement",
+      "automation_group": "stage1_keyway",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "The grading extension line starts at the notch top. Participant Fig.10 places that top 25 mm above the main axis; 35 - 25 = 10 mm. A coincident mounting-hole height alone is insufficient evidence."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D17",
+      "stage": 1,
+      "description": "Four small-flange mounting through-hole diameters",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm",
+        "multiplicity": 4
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_small_flange_holes",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": [],
+      "required_conditions": [
+        {
+          "id": "through",
+          "description": "All four mounting holes pass through the full thickness of their flange; diameter agreement alone is insufficient.",
+          "evaluation_method": "independent_hole_axis_geometry_and_end_openings_or_section_review",
+          "required_result": true
+        }
+      ]
+    },
+    {
+      "id": "S1D18",
+      "stage": 1,
+      "description": "Small-flange mounting-hole center distances from adjacent outer edges",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm",
+        "multiplicity": 8,
+        "printed_multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_small_flange_holes",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Check both orthogonal directions and all four members of the symmetric pattern.",
+        "Required measurement multiplicity expands the printed dimension classes across every repeated feature: all four holes or all five fins must be verified."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D19",
+      "stage": 1,
+      "description": "Small-flange outer width and height",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 70,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_flange_outline",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D20",
+      "stage": 1,
+      "description": "Small-end counterbore depth from terminal face along the main axis",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 7,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_bore",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D21",
+      "stage": 1,
+      "description": "Small-end counterbore diameter",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 40,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stage1_main_bore",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S1D22",
+      "stage": 1,
+      "description": "Stage-1 model has no obvious geometry or failed-feature errors",
+      "measurement_kind": "integrity",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The cumulative model rebuilds and is a valid nondegenerate solid without non-manifold debris or failed features."
+      },
+      "tolerance": {
+        "kind": "kernel_and_rebuild",
+        "positive_volume_mm3": 0,
+        "minimum_solid_count": 1,
+        "boolean_volume_mm3": "max(1e-9, 1e-8 * relevant_part_volume_mm3)"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 10,
+          "pdf_page_1based": 11
+        },
+        {
+          "appendix": "B",
+          "figure": 15,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "clean_rebuild_and_independent_brep_check_plus_source_review",
+      "automation_group": "stage_integrity",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "This is a numbered qualitative criterion, not a numerical dimension. A stage-1 snapshot is preferred; when only final geometry exists, report that substitution and retain unavailable stage-history review as unresolved."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": [
+        "Overlaps global model integrity gate; must not be silently deleted to force a60-item denominator."
+      ]
+    },
+    {
+      "id": "S2D1",
+      "stage": 2,
+      "description": "Rounded-square radiator stem cross-section corner radii",
+      "measurement_kind": "radius",
+      "expected": {
+        "type": "numeric",
+        "value": 8,
+        "unit": "mm",
+        "multiplicity": 4
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_stem",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D2",
+      "stage": 2,
+      "description": "Rounded-square radiator stem cross-section width and depth",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 40,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_stem",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D3",
+      "stage": 2,
+      "description": "Radiator bore diameter and through connection into the main passage",
+      "measurement_kind": "compound",
+      "expected": {
+        "type": "compound",
+        "components": [
+          {
+            "name": "diameter",
+            "value": 18,
+            "unit": "mm",
+            "absolute_tolerance": 0.01
+          },
+          {
+            "name": "through_connection_to_main_bore",
+            "relation": "Open connection into the main axial passage, not a blind hole."
+          }
+        ]
+      },
+      "tolerance": {
+        "kind": "per_component",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_bore",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D4",
+      "stage": 2,
+      "description": "Radiator fin outer width and depth",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 60,
+        "unit": "mm",
+        "multiplicity": 10,
+        "printed_multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_fins",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Apply to the fin outline; all repeated fins must agree.",
+        "Required measurement multiplicity expands the printed dimension classes across every repeated feature: all four holes or all five fins must be verified."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D5",
+      "stage": 2,
+      "description": "Top circular radiator boss outside diameter",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 45,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_top_boss",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D6",
+      "stage": 2,
+      "description": "Radiator fin external corner radii",
+      "measurement_kind": "radius",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm",
+        "multiplicity": 20,
+        "printed_multiplicity": 4
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_fins",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Apply consistently to the repeated fin outlines.",
+        "Required measurement multiplicity expands the printed dimension classes across every repeated feature: all four holes or all five fins must be verified."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D7",
+      "stage": 2,
+      "description": "Thickness of top circular boss above the top fin",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 4,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_top_boss",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Participant heights 94 and 90 mm give this 4 mm difference."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D8",
+      "stage": 2,
+      "description": "Axial position of radiator centerline from the large-flange outer face",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 45,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_placement",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D9",
+      "stage": 2,
+      "description": "Vertical extent of the five-fin stack excluding the top circular boss",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 36,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_fins",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Exact derived extent 90 - 54 = 36 mm, also 5*4 + 4*4. Retained because it has its own source ID."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": [
+        "Dimension equals the sum of the five fin thicknesses and four gaps represented by S2D11 and S2D12. Keep its labeled item; disclose correlation rather than removing it."
+      ]
+    },
+    {
+      "id": "S2D10",
+      "stage": 2,
+      "description": "Height of the lowest fin underside above the main-body axis",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 54,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_placement",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D11",
+      "stage": 2,
+      "description": "Five fin thicknesses",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 4,
+        "unit": "mm",
+        "multiplicity": 5
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_fins",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D12",
+      "stage": 2,
+      "description": "Four gaps between fins",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 4,
+        "unit": "mm",
+        "multiplicity": 4
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "radiator_fins",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D13",
+      "stage": 2,
+      "description": "Radiator core retains its rounded-square section up to the underside of the top fin",
+      "measurement_kind": "relation",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The specified square/rectangular stem section continues through the fin stack to the bottom of the top flange; it is not replaced by a round neck below the top."
+      },
+      "tolerance": {
+        "kind": "relation",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_brep_evidence",
+      "automation_group": "radiator_stem",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Participant Fig.11 explicitly notes the square section below the top flange. Verify sectioned geometry, not the outside isometric silhouette."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S2D14",
+      "stage": 2,
+      "description": "Stage-2 cumulative model has no obvious geometry or failed-feature errors",
+      "measurement_kind": "integrity",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The cumulative model rebuilds and is a valid nondegenerate solid without non-manifold debris or failed features."
+      },
+      "tolerance": {
+        "kind": "kernel_and_rebuild",
+        "positive_volume_mm3": 0,
+        "minimum_solid_count": 1,
+        "boolean_volume_mm3": "max(1e-9, 1e-8 * relevant_part_volume_mm3)"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 16,
+          "pdf_page_1based": 14
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "clean_rebuild_and_independent_brep_check_plus_source_review",
+      "automation_group": "stage_integrity",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Distinct numbered source item, although it overlaps the general validity gate and S1D22. Prefer a stage-2 snapshot; do not pretend final-only evidence establishes prior construction history."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": [
+        "Overlaps global model integrity gate and earlier-stage S1D22; both source labels remain scored as distinct stage observations when evidence exists."
+      ]
+    },
+    {
+      "id": "S3D1",
+      "stage": 3,
+      "description": "Tilted-bore inner cylindrical surface area and through passage",
+      "measurement_kind": "compound",
+      "expected": {
+        "type": "compound",
+        "components": [
+          {
+            "name": "inner_bore_surface_area",
+            "value": 815.24,
+            "unit": "mm2",
+            "interval": [
+              815.2395,
+              815.2405
+            ],
+            "numerical_margin": 0.1
+          },
+          {
+            "name": "through_connection_to_main_bore",
+            "relation": "Tilted bore opens into the main axial passage."
+          }
+        ]
+      },
+      "tolerance": {
+        "kind": "per_component",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "evaluator_only_derived_proxy_for_participant_geometry",
+      "evaluation_method": "operator_face_association_review_then_independent_area_and_connectivity_measurement",
+      "automation_group": "tilted_bore",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "The area value occurs only in the grading sheet. Do not expose it to the candidate. Sum only the intended inner bore faces, allowing an equivalent face split. The 0.1 mm2 margin is an adaptation, not a tolerance stated in the paper."
+      ],
+      "ambiguity": "The paper does not define the area-face selection algorithm or a numerical tolerance. An unambiguous face association is required; if it cannot be established, leave this item unresolved rather than treating a mismatch or absence of an extractor as a definitive geometry failure.",
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D2",
+      "stage": 3,
+      "description": "Distance from tilted boss top circular-face center to the small-flange terminal plane",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 35.78,
+        "unit": "mm",
+        "interval": [
+          35.775,
+          35.785
+        ]
+      },
+      "tolerance": {
+        "kind": "rounded_interval",
+        "compare_to_interval": true,
+        "numerical_margin": 0.001,
+        "unit": "mm",
+        "rounding_half_width": 0.005
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "evaluator_only_rounded_derived_value",
+      "evaluation_method": "operator_feature_association_review_then_independent_measurement",
+      "automation_group": "tilted_boss_placement",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "The grading screenshot identifies a circular feature and terminal face. Participant Fig.12 gives the base-center axial distance 37 mm and 10 mm boss height on the 7 degree cone; the inferred top-center distance is 37 - 10*sin(7 degrees) = 35.781306566. This feature association must be confirmed before numerical scoring."
+      ],
+      "ambiguity": "Top circular feature center is inferred from grading screenshot and the differing 37 mm participant value. Confirm that reference before scoring; base-center distance37 is not directly interchangeable with the35.78 derived top-center distance.",
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D3",
+      "stage": 3,
+      "description": "Distance from each tab-hole center axis to the outer end of its angled tab",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "angled_tabs",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Use center-axis distance, not the shortest hole-edge clearance. In the participant drawing this follows from radial positions 60 and 50 mm."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D4",
+      "stage": 3,
+      "description": "Paired tab directions relative to the downward centerline in the transverse section",
+      "measurement_kind": "angle",
+      "expected": {
+        "type": "numeric",
+        "value": 45,
+        "unit": "deg",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.1,
+        "unit": "deg"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "angled_tabs",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D5",
+      "stage": 3,
+      "description": "Transverse thickness of each angled tab",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "angled_tabs",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D6",
+      "stage": 3,
+      "description": "Radial distance from main-body centerline to each angled-tab outer end",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 60,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "angled_tabs",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "S3D6-Alt is an alternative measurement, not a 62nd item."
+      ],
+      "ambiguity": null,
+      "alternatives": [
+        {
+          "source_label": "S3D6-Alt",
+          "description": "Exposed radial tab length from the main cylinder surface to the outer end",
+          "expected": {
+            "value": 25,
+            "unit": "mm",
+            "multiplicity": 2
+          },
+          "condition": "Use only if the main cylinder outside diameter70mm (S1D7) passes independently; 35 + 25 = 60. Do not award a separate point.",
+          "source_refs": [
+            {
+              "appendix": "B",
+              "figure": 17,
+              "pdf_page_1based": 15
+            }
+          ]
+        }
+      ],
+      "redundancy": []
+    },
+    {
+      "id": "S3D7",
+      "stage": 3,
+      "description": "Paired angled-tab through-hole diameters",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 12,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "angled_tab_holes",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Participant Fig.12 states 2X diameter12. The grading sheet shows a single diameter label; both mirrored instances are required."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": [],
+      "required_conditions": [
+        {
+          "id": "through",
+          "description": "Both angled-tab holes pass through the full thickness of the respective tab as shown in the participant sectional view; diameter agreement alone is insufficient.",
+          "evaluation_method": "independent_hole_axis_geometry_and_end_openings_or_section_review",
+          "required_result": true
+        }
+      ]
+    },
+    {
+      "id": "S3D8",
+      "stage": 3,
+      "description": "Axial width of each angled tab",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 20,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "angled_tabs",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Participant Fig.12 states 2X20; both tab widths must be checked."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D9",
+      "stage": 3,
+      "description": "Paired simple blind holes in the sides of the main cylindrical body",
+      "measurement_kind": "compound",
+      "expected": {
+        "type": "compound",
+        "components": [
+          {
+            "name": "diameter",
+            "value": 8.5,
+            "unit": "mm",
+            "absolute_tolerance": 0.01,
+            "multiplicity": 2
+          },
+          {
+            "name": "depth",
+            "value": 5,
+            "unit": "mm",
+            "absolute_tolerance": 0.01,
+            "multiplicity": 2
+          },
+          {
+            "name": "termination",
+            "relation": "Both holes are blind, with the shown simple hole geometry; neither opens into the main axial passage."
+          }
+        ]
+      },
+      "tolerance": {
+        "kind": "per_component",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "side_blind_holes",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "The participant task describes two small holes. Their side locations and symmetry are also constrained by S3D13 and the views."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D10",
+      "stage": 3,
+      "description": "Height of the tilted circular boss along its own axis above the cone surface",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "tilted_boss",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D11",
+      "stage": 3,
+      "description": "Tilted-bore diameter",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 12,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "tilted_bore",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D12",
+      "stage": 3,
+      "description": "Tilted-boss outside diameter",
+      "measurement_kind": "diameter",
+      "expected": {
+        "type": "numeric",
+        "value": 22,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "tilted_boss",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D13",
+      "stage": 3,
+      "description": "Side holes and angled-tab centers share the radiator transverse plane",
+      "measurement_kind": "relation",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The side-hole axes and the axial midplanes of both angled tabs line up at the radiator centerline axial station."
+      },
+      "tolerance": {
+        "kind": "relation",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_brep_evidence",
+      "automation_group": "stage3_alignment",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "This is a spatial alignment relation; equal scalar dimensions in source code alone do not establish the built geometry."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S3D14",
+      "stage": 3,
+      "description": "Angled tabs and their holes form the intended mirror pair",
+      "measurement_kind": "relation",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The two angled tabs and their holes are mirror images about the longitudinal vertical midplane of the main body."
+      },
+      "tolerance": {
+        "kind": "relation",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "B",
+          "figure": 17,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_brep_evidence",
+      "automation_group": "stage3_symmetry",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D1",
+      "stage": 4,
+      "description": "Stand base and large-flange outer face are axially aligned",
+      "measurement_kind": "relation",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The large-flange outer terminal face and the corresponding large-end edge of the stand base share the axial station shown in the assembled side view."
+      },
+      "tolerance": {
+        "kind": "relation",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_brep_evidence",
+      "automation_group": "stand_placement",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Use assembled relative placement; do not independently register the two components in a way that erases a placement error."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D2",
+      "stage": 4,
+      "description": "Central supporting rib conforms to the body underside",
+      "measurement_kind": "relation",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The rib is centered and its supporting profile follows the corresponding main-body cylindrical and conical underside, with geometric contact and no unintended interference."
+      },
+      "tolerance": {
+        "kind": "relation",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_brep_evidence",
+      "automation_group": "stand_fit",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Assess nominal geometry here. The instruction that supporting geometry be driven by the body requires separate source/dependency review. A parameter-perturbation check is optional and reported separately; BRep contact alone does not establish a parametric relationship."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D3",
+      "stage": 4,
+      "description": "Stand upright reaches the main-body centerline",
+      "measurement_kind": "relation",
+      "expected": {
+        "type": "qualitative",
+        "relation": "The upper shoulders of the supporting upright terminate at the height of the main-body centerline as shown."
+      },
+      "tolerance": {
+        "kind": "relation",
+        "linear_mm": 0.01,
+        "angular_deg": 0.1
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "operator_geometry_review_with_brep_evidence",
+      "automation_group": "stand_placement",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D4",
+      "stage": 4,
+      "description": "Central rib width in plan view",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 15,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_rib",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D5",
+      "stage": 4,
+      "description": "Widths of the two elongated base slots",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 8,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_slots",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D6",
+      "stage": 4,
+      "description": "Nearest slot edge offset from corresponding long outer edge of the base",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 7,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "exact_derived_from_participant_dimensions",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_slots",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [
+        "Participant dimensions give base width70, slot-center separation48 and slot width8: (70 - 48)/2 - 8/2 = 7 mm. Both symmetric edge margins are required."
+      ],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D7",
+      "stage": 4,
+      "description": "Axial start offset of both slots from the large-end base edge",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 30,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_slots",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D8",
+      "stage": 4,
+      "description": "Axial lengths of both base slots",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 70,
+        "unit": "mm",
+        "multiplicity": 2
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_slots",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D9",
+      "stage": 4,
+      "description": "Stand upright thickness along the main axis",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_upright",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D10",
+      "stage": 4,
+      "description": "Stand outside width across the main-body transverse direction",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 70,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_outline",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    },
+    {
+      "id": "S4D11",
+      "stage": 4,
+      "description": "Stand base thickness",
+      "measurement_kind": "length",
+      "expected": {
+        "type": "numeric",
+        "value": 10,
+        "unit": "mm"
+      },
+      "tolerance": {
+        "kind": "absolute",
+        "absolute": 0.01,
+        "unit": "mm"
+      },
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        },
+        {
+          "appendix": "B",
+          "figure": 18,
+          "pdf_page_1based": 15
+        }
+      ],
+      "source_basis": "direct_or_exact_derived_from_participant_drawing",
+      "evaluation_method": "automatic_brep_if_unique_feature_association_else_operator_review",
+      "automation_group": "stand_outline",
+      "default_status": "requires_review",
+      "weight": 1,
+      "multiplicity_policy": "All specified instances/components must satisfy this item; do not average deviations or award credit for only one instance.",
+      "notes": [],
+      "ambiguity": null,
+      "alternatives": [],
+      "redundancy": []
+    }
+  ],
+  "supplemental_requirements": [
+    {
+      "id": "SUP-SEPARATE-STAND",
+      "description": "The stand is a separate part/body supporting the main part.",
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 13,
+          "pdf_page_1based": 13
+        }
+      ],
+      "evaluation_method": "independent_component_identity_solids_and_assembly_review",
+      "acceptance_role": "required_gate",
+      "included_in_61_denominator": false
+    },
+    {
+      "id": "SUP-SUPPORT-DEPENDENCIES",
+      "description": "All supporting surfaces and hole locations match and are driven by the main-body geometry.",
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        }
+      ],
+      "evaluation_method": "assembled_brep_fit_and_hole_alignment_plus_source_dependency_review",
+      "acceptance_role": "required_design_intent_review",
+      "included_in_61_denominator": false,
+      "notes": [
+        "Nominal geometry agreement alone establishes matching, not dependency. Source/dependency review is required. A preregistered parameter perturbation is optional and reported separately; it is not an additional acceptance hurdle."
+      ]
+    },
+    {
+      "id": "SUP-CUMULATIVE-GEOMETRY",
+      "description": "Dimensions and features from earlier stages remain unchanged except for the stated new features.",
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 11,
+          "pdf_page_1based": 12
+        },
+        {
+          "appendix": "A",
+          "figure": 12,
+          "pdf_page_1based": 12
+        }
+      ],
+      "evaluation_method": "measure earlier-stage requirements in the final assembly; use staged exports where necessary",
+      "acceptance_role": "required_gate",
+      "included_in_61_denominator": false
+    },
+    {
+      "id": "SUP-STAND-DIMENSIONS",
+      "description": "Explicit participant-sheet stand dimensions not all directly represented by the numbered grading labels",
+      "source_refs": [
+        {
+          "appendix": "A",
+          "figure": 14,
+          "pdf_page_1based": 13
+        }
+      ],
+      "evaluation_method": "operator_brep_measurements_with_fixed_numeric_comparison",
+      "acceptance_role": "required_gate",
+      "included_in_61_denominator": false,
+      "expected": {
+        "type": "compound",
+        "components": [
+          {
+            "name": "overall_height",
+            "value": 80,
+            "unit": "mm",
+            "absolute_tolerance": 0.01
+          },
+          {
+            "name": "base_length",
+            "value": 130,
+            "unit": "mm",
+            "absolute_tolerance": 0.01
+          },
+          {
+            "name": "slot_end_to_upright_inner_face",
+            "value": 20,
+            "unit": "mm",
+            "absolute_tolerance": 0.01,
+            "multiplicity": 2
+          },
+          {
+            "name": "slot_center_separation",
+            "value": 48,
+            "unit": "mm",
+            "absolute_tolerance": 0.01
+          }
+        ]
+      },
+      "tolerance": {
+        "kind": "per_component",
+        "linear_mm": 0.01
+      },
+      "notes": [
+        "Retains explicit participant-sheet requirements as unscored acceptance checks; does not silently add or remove numbered AppendixB points. Some slot distances are algebraically redundant but independently checked against the original sheet."
+      ]
+    }
+  ]
+}

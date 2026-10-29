@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "success": true,
+  "status": "completed",
+  "launched": true,
+  "pid": 83265,
+  "returncode": 0,
+  "worker_reaped": true,
+  "timeout_seconds": 60,
+  "effective_deadline_monotonic": 1438271.075328833,
+  "deadline_source": "trial",
+  "containment": "direct_unreaped_child_pid_requires_kernel_no_fork_policy",
+  "controller_death_protection": false,
+  "cleanup_signals": [],
+  "cleanup_errors": [],
+  "stdout": "[Errno 1] Operation not permitted: '/Library/Fonts'\n[Errno 1] Operation not permitted: '/System/Library/Fonts'\n{'main-part.step': {'faces': 150, 'sha256': '9496d40d13f162f90551ed1ba1baf13c1104436278bc4a74ee8f6a5ee43a82c8', 'valid': True, 'solids': 1}, 'step-2.step': {'faces': 130, 'sha256': '93f4f65ed4472065523b6019ec7eb8591c24671b835b0495a26673b69db58d87', 'valid': True, 'solids': 1}, 'step-3.step': {'faces': 150, 'sha256': '584265335f2b1072ef9d1b2f481626a63c10a77b00f63ae970ab0ba120e355eb', 'valid': True, 'solids': 1}}\n",
+  "stderr": "",
+  "output_bytes_stored": 526,
+  "output_limit_bytes": 2097152,
+  "output_truncated": false,
+  "capture_errors": [],
+  "stdin_bytes_supplied": 1650,
+  "stdin_bytes_written": 1650,
+  "stdin_error": null,
+  "elapsed_seconds": 6.573759249877185,
+  "output_bytes_observed": {
+    "stdout": 526,
+    "stderr": 0
+  },
+  "policy_sha256": "b96a8b4aaa0da285aabe010dcf4629fda3b5a3a7ec782f0694664f3b0741bfb3",
+  "source_sha256": "034fffddc7f71b2a1ef1721b3320151a73033bffc060f18a1f6cbb67ad2a7275"
+}

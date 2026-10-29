@@ -1,0 +1,199 @@
+{
+  "reviewer": "Codex AI-assisted operator review (stand/source/retention); not human signoff",
+  "snapshot_sha256": "fb664635c2878d731481d4ceaeecc3690d6a634d9c6d4f8ba5da4b9a39c65c66",
+  "rubric_sha256": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+  "observations": {
+    "S4D1": {
+      "satisfied": true,
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Stand face0 and main face47 are planes at x=0: displacement0mm; shared assembly frame, no independent registration."
+      ]
+    },
+    "S4D2": {
+      "satisfied": true,
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Rib side faces13/14 lie at y=+/-7.5 (center y=0). Main axis is y=z=0. Rib cylinder face24 and cone face25, upright cone face21, and shoulder face26 each have exactly equal total/common-with-main surface areas. Stand-main overlap0mm3.",
+        "results/trial-001/operator-review/stand/evidence/work-contact/contact-and-holes.json"
+      ]
+    },
+    "S4D3": {
+      "satisfied": true,
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Both upright shoulder planes (stand faces6,20) lie at z=0, identical to the main cylindrical axis z=0; measured shoulder angular directions are parallel to the transverse horizontal plane."
+      ]
+    },
+    "S4D4": {
+      "values": [
+        15.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Rib side planes13/14 at y=+7.5,-7.5 -> width15mm."
+      ]
+    },
+    "S4D5": {
+      "values": [
+        8.0,
+        8.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Negative-y slot walls9/10 at y=-20,-28 and positive-y walls17/19 at y=20,28 -> widths8,8mm. Faces8-11 and16-19 establish two separate openings through z=-80..-70."
+      ]
+    },
+    "S4D6": {
+      "values": [
+        7.0,
+        7.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Outer base sides1/3 at y=-35,+35; near outer slot walls10/19 at y=-28,+28 -> margins7,7mm."
+      ]
+    },
+    "S4D7": {
+      "values": [
+        30.0,
+        30.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Both near slot end planes8/16 lie at x=30, base end plane0 at x=0 -> offsets30,30mm."
+      ]
+    },
+    "S4D8": {
+      "values": [
+        70.0,
+        70.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Slot end planes8/11 and16/18 lie at x=30 and100 -> lengths70,70mm."
+      ]
+    },
+    "S4D9": {
+      "values": [
+        10.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Upright planes5/7 lie at x=120 and130 -> thickness10mm."
+      ]
+    },
+    "S4D10": {
+      "values": [
+        70.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Outside stand side planes1/3 lie at y=-35 and35 -> width70mm."
+      ]
+    },
+    "S4D11": {
+      "values": [
+        10.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Base lower/upper planes4/2 lie at z=-80,-70 -> thickness10mm."
+      ]
+    }
+  },
+  "supplemental": {
+    "SUP-STAND-DIMENSIONS": {
+      "components": {
+        "overall_height": {
+          "values": [
+            80.0
+          ]
+        },
+        "base_length": {
+          "values": [
+            130.0
+          ]
+        },
+        "slot_end_to_upright_inner_face": {
+          "values": [
+            20.0,
+            20.0
+          ],
+          "all_instances_verified": true
+        },
+        "slot_center_separation": {
+          "values": [
+            48.0
+          ]
+        }
+      },
+      "feature_present": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Overall height80mm, base length130mm, both far slot ends x100 to upright inner face x120 ->20mm each, slot centers y=-24,+24 ->48mm. Derived from associated imported B-rep planes, not candidate parameters."
+      ]
+    },
+    "SUP-SEPARATE-STAND": {
+      "satisfied": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "stand.step is one valid positive-volume solid (155495.5351022963mm3); main-part.step is a separate valid solid (504630.73717243987mm3). assembly.step contains two solids; independent symmetric-difference comparisons match one to main and one to stand, both0mm3. Stand supports body at its matched faces and overlap volume0mm3."
+      ]
+    },
+    "SUP-SUPPORT-DEPENDENCIES": {
+      "satisfied": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/source-dependency-review.txt",
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "results/trial-001/operator-review/stand/evidence/work-contact/contact-and-holes.json",
+        "results/trial-001/evaluation.json analysis.rebuild_comparison: all six export symmetric-difference volumes0mm3.",
+        "Submitted build.py SHA256 96ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840; master contact source lines91-99,110-119,180-201,211-219; shared front-hole drivers lines88-89,117-118,197-200."
+      ]
+    },
+    "SUP-CUMULATIVE-GEOMETRY": {
+      "satisfied": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/retention.json",
+        "results/trial-001/operator-review/stand/evidence/root-keyway.json",
+        "results/trial-001/operator-review/stand/evidence/peer-stage23-measured.json",
+        "results/trial-001/operator-review/stand/evidence/source-dependency-review.txt",
+        "Frozen automatic stage1/final measurements preserve flange/body/counterbore dimensions and hole conditions; independent final cone-face association resolves the split-bore retention ambiguity (diameter30.849899593579mm atx135). Root isolated measurements show identical stage1/final keyway planes and validity.",
+        "Independent final-vs-step2 radiator-region forward/reverse differences are both0mm3; region x[14,76],y[-31,31],z[20,95] contains exposed radiator and excludes later features. Step3/final main whole-solid differences are both0mm3. Source chain and clean rebuild bind the staged geometry; expected newly introduced cuts are not treated as retention failures."
+      ]
+    }
+  }
+}

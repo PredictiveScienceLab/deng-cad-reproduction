@@ -1,0 +1,5 @@
+Drawing source: Yuanzhe Deng, James Chen, and Alison Olechowski, "What Sets Proficient and Expert Users Apart? Results of a Computer-Aided Design Experiment," Journal of Mechanical Design 146(1), 011401 (2024). DOI: 10.1115/1.4063360.
+
+The five supplied sheets are faithful image crops of Appendix A, Figures 10-14, from the authors' public copy at https://felix-deng.github.io/files/papers/jmd24.pdf . Drawing notes, dimensions, and title blocks are preserved. The crops remove surrounding article text and editorial figure captions; no dimensions or geometry were redrawn or added. Copyright remains with the original rights holders.
+
+The task prompt is an adaptation for a coding agent using CadQuery. It is not a verbatim transcript of the original Onshape experiment instructions.

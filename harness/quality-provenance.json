@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "historical_freeze_sha256": "c82dc5149b46b39312ed774d86c4ed34076fb141c6ca06c551814239661679ca",
+  "historical_release": "deng-quality-v1",
+  "rubric_sha256": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+  "source_audit_sha256": "c1357c7510a7d1aad3f4733e3dbdd2949f70b6b4ea62dab5b33ac8ea723ae7e2",
+  "original_module_sha256": {
+    "apply_review.py": "46f8ce0a4061b14cfc8368515a97319b0955f431a9c2085c89886e73bac1c355",
+    "check_service.py": "3587060c3ec6e1151edb184a2d95887fac3b6c6ef380024d0aa85756e7b8c70c",
+    "evaluate.py": "bce1ce9713ee19b047b17e9e6ce3f9aea787a564d3d28fd3b706db7468d3095f",
+    "execution.py": "0588a2acd0927a9d6c95791d23a7a8be8d81caf9684a8b261ca4579dc7494f26",
+    "geometry.py": "95880035d82fe2df6212e9c1b2776940aac0a76f95a9a40d31c486d952e8a878",
+    "integrity.py": "7a5f7a93ec00592281792399328bb436c9bd586f4895229dbfd23a31a5acd2bf",
+    "rebuild.py": "692d265b3848b9cb6d4820e31240322cd7b0cc266885956061cecd2be9ab338d",
+    "render_views.py": "23ec4767e5cb88617db2955f36f8626ea52d16abe57a3b7f7514c2c003a2aa7e",
+    "scoring.py": "24775495a3c2d39143a4345329c93047504c3b9fbc4bda5dfba46ab9abfd47f5",
+    "fixtures.py": "8f86b0ff05da1bd7d69ec10c5f53b9e826415fdc6080f4f31362faad189da7ca",
+    "test_check_service.py": "ae882433e34444093bf027e4e32c2375009f59e8d99dbf6ffa77a11d6e479cdf",
+    "test_geometry.py": "256a323d0d8893ea29d616b7d6ede849fb604c073ea1dacf8195a2edc04793b3",
+    "test_integrity.py": "927591618645c57ba87c9984512fd54872d0ebb97b706051a5ac4c6f1e5328e7",
+    "test_scoring.py": "751be91b825f07e4f397fd7deeb294d5f079d5b5562eb3b72763afaef41c7da2"
+  },
+  "template_module_sha256": {
+    "apply_review.py": "46f8ce0a4061b14cfc8368515a97319b0955f431a9c2085c89886e73bac1c355",
+    "check_service.py": "3587060c3ec6e1151edb184a2d95887fac3b6c6ef380024d0aa85756e7b8c70c",
+    "evaluate.py": "5dcd92fb63db597914416613ea1325dc1e4b32c625d2d1ed91022b8da31617a6",
+    "execution.py": "6285ca0a932efd4940ab23e0a6b2cb1746df67f6fe1c105ce86988c499070611",
+    "geometry.py": "95880035d82fe2df6212e9c1b2776940aac0a76f95a9a40d31c486d952e8a878",
+    "integrity.py": "7a5f7a93ec00592281792399328bb436c9bd586f4895229dbfd23a31a5acd2bf",
+    "rebuild.py": "692d265b3848b9cb6d4820e31240322cd7b0cc266885956061cecd2be9ab338d",
+    "render_views.py": "23ec4767e5cb88617db2955f36f8626ea52d16abe57a3b7f7514c2c003a2aa7e",
+    "scoring.py": "24775495a3c2d39143a4345329c93047504c3b9fbc4bda5dfba46ab9abfd47f5",
+    "fixtures.py": "8f86b0ff05da1bd7d69ec10c5f53b9e826415fdc6080f4f31362faad189da7ca",
+    "test_check_service.py": "ae882433e34444093bf027e4e32c2375009f59e8d99dbf6ffa77a11d6e479cdf",
+    "test_geometry.py": "256a323d0d8893ea29d616b7d6ede849fb604c073ea1dacf8195a2edc04793b3",
+    "test_integrity.py": "927591618645c57ba87c9984512fd54872d0ebb97b706051a5ac4c6f1e5328e7",
+    "test_scoring.py": "751be91b825f07e4f397fd7deeb294d5f079d5b5562eb3b72763afaef41c7da2"
+  },
+  "changes": "Only hardcoded project/runtime path literals in evaluate.py and execution.py replaced by @PROJECT@/@RUNTIME@. Criterion/scoring/geometry logic unchanged. Selected original runtime modules, fixtures and relevant tests copied; historical report-generation and campaign-qualification drivers omitted.",
+  "inert_historical_paths": "Exact frozen rubric and source-audit retain original source-location metadata solely to preserve their hashes; runtime never uses those paths."
+}

@@ -1,0 +1,768 @@
+{
+  "frame": {
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "x": [
+      1,
+      0,
+      0
+    ],
+    "y": [
+      0,
+      1,
+      0
+    ],
+    "z": [
+      0,
+      0,
+      1
+    ],
+    "independent_anchors": {
+      "main_axis_face": 23,
+      "large_outer_terminal_face": 47,
+      "small_outer_terminal_face": 4,
+      "vertical_keyway_top_face": 15,
+      "radiator_bore_axis_face": 46
+    },
+    "note": "Imported geometry directly has this frame; no registration or scaling applied."
+  },
+  "stem": {
+    "corner_radii": [
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "corner_faces": [
+      26,
+      28,
+      30,
+      33
+    ],
+    "dimensions": [
+      40.0,
+      40.0
+    ],
+    "dimension_face_pairs": [
+      [
+        27,
+        31
+      ],
+      [
+        29,
+        34
+      ]
+    ]
+  },
+  "fins": [
+    {
+      "index_bottom_up": 1,
+      "planes": [
+        48,
+        77
+      ],
+      "z": [
+        54.0,
+        58.0
+      ],
+      "thickness": 4.0,
+      "dimensions": [
+        60.0,
+        60.0
+      ],
+      "side_plane_pairs": [
+        [
+          71,
+          72
+        ],
+        [
+          68,
+          75
+        ]
+      ],
+      "corner_radii": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "corner_faces": [
+        69,
+        70,
+        73,
+        74
+      ]
+    },
+    {
+      "index_bottom_up": 2,
+      "planes": [
+        95,
+        113
+      ],
+      "z": [
+        62.0,
+        66.0
+      ],
+      "thickness": 4.0,
+      "dimensions": [
+        60.0,
+        60.0
+      ],
+      "side_plane_pairs": [
+        [
+          100,
+          101
+        ],
+        [
+          97,
+          104
+        ]
+      ],
+      "corner_radii": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "corner_faces": [
+        98,
+        99,
+        102,
+        103
+      ]
+    },
+    {
+      "index_bottom_up": 3,
+      "planes": [
+        131,
+        149
+      ],
+      "z": [
+        70.0,
+        74.0
+      ],
+      "thickness": 4.0,
+      "dimensions": [
+        60.0,
+        60.0
+      ],
+      "side_plane_pairs": [
+        [
+          136,
+          137
+        ],
+        [
+          133,
+          140
+        ]
+      ],
+      "corner_radii": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "corner_faces": [
+        134,
+        135,
+        138,
+        139
+      ]
+    },
+    {
+      "index_bottom_up": 4,
+      "planes": [
+        132,
+        114
+      ],
+      "z": [
+        78.0,
+        82.0
+      ],
+      "thickness": 4.0,
+      "dimensions": [
+        60.0,
+        60.0
+      ],
+      "side_plane_pairs": [
+        [
+          126,
+          127
+        ],
+        [
+          123,
+          130
+        ]
+      ],
+      "corner_radii": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "corner_faces": [
+        124,
+        125,
+        128,
+        129
+      ]
+    },
+    {
+      "index_bottom_up": 5,
+      "planes": [
+        96,
+        78
+      ],
+      "z": [
+        86.0,
+        90.0
+      ],
+      "thickness": 4.0,
+      "dimensions": [
+        60.0,
+        60.0
+      ],
+      "side_plane_pairs": [
+        [
+          93,
+          89
+        ],
+        [
+          87,
+          91
+        ]
+      ],
+      "corner_radii": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "corner_faces": [
+        88,
+        90,
+        92,
+        94
+      ]
+    }
+  ],
+  "fin_gaps": [
+    4.0,
+    4.0,
+    4.0,
+    4.0
+  ],
+  "radiator": {
+    "bore_face": 46,
+    "bore_diameter": 18.0,
+    "bore_adjacent_faces": [
+      24,
+      67
+    ],
+    "top_boss_face": 76,
+    "boss_diameter": 45.0,
+    "boss_height": 4.0,
+    "axial_station": 45.0,
+    "stack_height": 36.0,
+    "lowest_fin_height": 54.0,
+    "through_probe": {
+      "start": [
+        45.0,
+        0.0,
+        0.0
+      ],
+      "end": [
+        45.0,
+        0.0,
+        94.1
+      ],
+      "radius_mm": 8.999,
+      "intersection_volume_mm3": 0.0
+    }
+  },
+  "stem_exposed_intervals": [
+    {
+      "z": [
+        35,
+        54
+      ],
+      "flat_faces": [
+        27,
+        31,
+        29,
+        34
+      ],
+      "dimensions": [
+        40.0,
+        40.0
+      ],
+      "corner_faces": [
+        26,
+        28,
+        30,
+        33
+      ],
+      "radii": [
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "z": [
+        58,
+        62
+      ],
+      "flat_faces": [
+        81,
+        85,
+        79,
+        83
+      ],
+      "dimensions": [
+        40.0,
+        40.0
+      ],
+      "corner_faces": [
+        80,
+        82,
+        84,
+        86
+      ],
+      "radii": [
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "z": [
+        66,
+        70
+      ],
+      "flat_faces": [
+        117,
+        121,
+        115,
+        119
+      ],
+      "dimensions": [
+        40.0,
+        40.0
+      ],
+      "corner_faces": [
+        116,
+        118,
+        120,
+        122
+      ],
+      "radii": [
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "z": [
+        74,
+        78
+      ],
+      "flat_faces": [
+        143,
+        147,
+        141,
+        145
+      ],
+      "dimensions": [
+        40.0,
+        40.0
+      ],
+      "corner_faces": [
+        142,
+        144,
+        146,
+        148
+      ],
+      "radii": [
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "z": [
+        82,
+        86
+      ],
+      "flat_faces": [
+        107,
+        111,
+        105,
+        109
+      ],
+      "dimensions": [
+        40.0,
+        40.0
+      ],
+      "corner_faces": [
+        106,
+        108,
+        110,
+        112
+      ],
+      "radii": [
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ]
+    }
+  ],
+  "tilted_boss": {
+    "outer_face": 19,
+    "top_face": 22,
+    "bore_face": 25,
+    "supporting_cone_face": 13,
+    "outer_diameter": 22.0,
+    "bore_diameter": 12.0,
+    "bore_area_mm2": 815.2397542079789,
+    "top_circle_center": [
+      106.21869343405,
+      0.0,
+      37.995075538986
+    ],
+    "axis": [
+      0.12186934340504114,
+      0.0,
+      0.9925461516413351
+    ],
+    "base_axis_cone_intersection": [
+      104.99999999999427,
+      0.0,
+      28.06961402256302
+    ],
+    "height": 10.000000000010205,
+    "top_center_to_small_terminal": 35.781306565950004,
+    "axis_from_vertical_deg": 6.999999999993866,
+    "bore_adjacent_faces": [
+      22,
+      24,
+      45
+    ],
+    "through_probe": {
+      "start": [
+        101.55348476752704,
+        0.0,
+        0.0
+      ],
+      "end": [
+        106.2308803683905,
+        0.0,
+        38.094330154150136
+      ],
+      "radius_mm": 5.999,
+      "intersection_volume_mm3": 0.0
+    }
+  },
+  "tabs": [
+    {
+      "end_face": 63,
+      "thickness_faces": [
+        38,
+        40
+      ],
+      "axial_faces": [
+        37,
+        39
+      ],
+      "hole_face": 64,
+      "radial_direction": [
+        0.0,
+        -0.7071067811865476,
+        -0.7071067811865476
+      ],
+      "reach": 59.99999999999598,
+      "hole_center": [
+        45.0,
+        -35.355339059319995,
+        -35.35533905932
+      ],
+      "hole_center_radial_coordinate": 49.99999999998957,
+      "hole_to_end": 10.000000000006407,
+      "angle_from_down_deg": 45.0,
+      "thickness": 9.999999999992255,
+      "axial_width": 20.0,
+      "axial_midplane": 45.0,
+      "hole_diameter": 12.0,
+      "hole_axial_span": 10.000000000006402,
+      "hole_circle_centers": [
+        [
+          45.0,
+          -38.89087296526,
+          -31.81980515339
+        ],
+        [
+          45.0,
+          -31.81980515339,
+          -38.89087296526
+        ]
+      ],
+      "hole_adjacent_faces": [
+        38,
+        40
+      ],
+      "through_probe": {
+        "start": [
+          45.0,
+          -38.897944033071866,
+          -31.812734085578136
+        ],
+        "end": [
+          45.0,
+          -31.812734085578136,
+          -38.897944033071866
+        ],
+        "radius_mm": 5.999,
+        "intersection_volume_mm3": 0.0
+      }
+    },
+    {
+      "end_face": 65,
+      "thickness_faces": [
+        42,
+        44
+      ],
+      "axial_faces": [
+        41,
+        43
+      ],
+      "hole_face": 66,
+      "radial_direction": [
+        0.0,
+        0.7071067811865726,
+        -0.7071067811865225
+      ],
+      "reach": 59.999999999995964,
+      "hole_center": [
+        45.0,
+        35.3553390593225,
+        -35.355339059322496
+      ],
+      "hole_center_radial_coordinate": 49.9999999999931,
+      "hole_to_end": 10.000000000002863,
+      "angle_from_down_deg": 45.00000000000203,
+      "thickness": 9.999999999993669,
+      "axial_width": 20.0,
+      "axial_midplane": 45.0,
+      "hole_diameter": 12.0,
+      "hole_axial_span": 10.000000000002867,
+      "hole_circle_centers": [
+        [
+          45.0,
+          31.819805153395,
+          -38.89087296526
+        ],
+        [
+          45.0,
+          38.89087296526,
+          -31.81980515339
+        ]
+      ],
+      "hole_adjacent_faces": [
+        42,
+        44
+      ],
+      "through_probe": {
+        "start": [
+          45.0,
+          31.812734085583134,
+          -38.897944033071866
+        ],
+        "end": [
+          45.0,
+          38.897944033071866,
+          -31.812734085578136
+        ],
+        "radius_mm": 5.999,
+        "intersection_volume_mm3": 0.0
+      }
+    }
+  ],
+  "side_blind_holes": [
+    {
+      "cylinder_face": 35,
+      "conical_tip_face": 61,
+      "diameter": 8.5,
+      "mouth_axis_intersection": [
+        45.0,
+        -35.0,
+        0.0
+      ],
+      "cylinder_end_center": [
+        45.0,
+        -30.0,
+        0.0
+      ],
+      "cylindrical_depth": 5.0,
+      "tip_apex": [
+        45.0,
+        -27.44634236913,
+        -3.106452503025e-16
+      ],
+      "total_axial_depth_including_tip": 7.553657630869999,
+      "tip_included_angle": 118.0000000000396,
+      "tip_adjacent_faces": [
+        35
+      ],
+      "cylinder_adjacent_faces": [
+        23,
+        61
+      ],
+      "main_bore_radius_at_axis_station": 20.141649932263142,
+      "axis_material_gap_to_main_bore": 7.304692436866858,
+      "axial_station": 45.0
+    },
+    {
+      "cylinder_face": 36,
+      "conical_tip_face": 62,
+      "diameter": 8.5,
+      "mouth_axis_intersection": [
+        45.0,
+        35.0,
+        0.0
+      ],
+      "cylinder_end_center": [
+        45.0,
+        30.0,
+        0.0
+      ],
+      "cylindrical_depth": 5.0,
+      "tip_apex": [
+        45.0,
+        27.446342369133,
+        3.106452503025e-16
+      ],
+      "total_axial_depth_including_tip": 7.553657630867001,
+      "tip_included_angle": 118.0000000000396,
+      "tip_adjacent_faces": [
+        36
+      ],
+      "cylinder_adjacent_faces": [
+        23,
+        62
+      ],
+      "main_bore_radius_at_axis_station": 20.141649932263142,
+      "axis_material_gap_to_main_bore": 7.304692436869857,
+      "axial_station": 45.0
+    }
+  ],
+  "stage2_preservation_region": {
+    "box": [
+      14,
+      76,
+      -31,
+      31,
+      20,
+      95
+    ],
+    "rationale": "Contains the entire exposed radiator; excludes later tabs, side holes and tilted port by independently measured feature extents. Same imported frame in both exports.",
+    "forward_difference_mm3": 0.0,
+    "reverse_difference_mm3": 0.0,
+    "first_volume_mm3": 152060.24002615162,
+    "second_volume_mm3": 152060.24002615162
+  },
+  "stage3_vs_final": {
+    "forward_difference_mm3": 0.0,
+    "reverse_difference_mm3": 0.0,
+    "first_volume_mm3": 504630.73717243987,
+    "second_volume_mm3": 504630.73717243987
+  },
+  "tab_mirror_comparison": {
+    "left_clip": [
+      34,
+      56,
+      -60,
+      0,
+      -60,
+      -15
+    ],
+    "right_clip": [
+      34,
+      56,
+      0,
+      60,
+      -60,
+      -15
+    ],
+    "mirror_plane": "y=0",
+    "forward_difference_mm3": 0.0,
+    "reverse_difference_mm3": 0.0,
+    "first_volume_mm3": 12828.41491779507,
+    "second_volume_mm3": 12828.414917791202
+  },
+  "sections": {
+    "axial_y0": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "edge_count": 81,
+      "file": "axial_y0.png"
+    },
+    "transverse_x45": {
+      "origin": [
+        45,
+        0,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "edge_count": 74,
+      "file": "transverse_x45.png"
+    },
+    "core_z60": {
+      "origin": [
+        0,
+        0,
+        60
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "edge_count": 9,
+      "file": "core_z60.png"
+    },
+    "core_z84": {
+      "origin": [
+        0,
+        0,
+        84
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "edge_count": 9,
+      "file": "core_z84.png"
+    }
+  }
+}

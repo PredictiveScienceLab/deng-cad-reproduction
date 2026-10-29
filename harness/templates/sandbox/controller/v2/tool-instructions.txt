@@ -1,0 +1,17 @@
+SANDBOX TOOL CONTRACT — FOR REVIEW; FULL CHECKER ADDITION STILL PENDING
+
+The unchanged task prompt and drawings are in agent-input/ and the review gallery. These instructions describe the two implemented sandbox tools. They do not yet constitute the final launch packet: the promised full geometry checker must be added and qualified before trial authorization.
+
+run_python(source, timeout_seconds=60)
+Runs Python source in a fresh process using the installed Python/CadQuery environment. The current directory is the candidate work directory. Read the supplied prompt, PNG drawings and PDF from ../input/. Write editable source, CAD exports and images in the current directory, including output/ for the required deliverables. File changes persist; Python variables do not persist between calls. Inspect local package APIs using Python. Use pathlib for file operations and runpy.run_path('output/build.py', run_name='__main__') to execute a saved build script inside this worker. No subprocesses, network or package installation are available. Threads are allowed. Every call is limited to 60 seconds and the remaining global time. Save intermediate work so operations can be resumed or split across calls. Returned text is bounded.
+
+Example:
+{"source":"from pathlib import Path; print(Path('../input/prompt.txt').read_text())","timeout_seconds":10}
+
+view_image(path)
+Shows a PNG/JPEG image within the permitted input, work or private scratch directories. Relative paths start at the work directory. Images are decoded inside the sandbox and bounded by pixel and output limits. Use ../input/drawings/step-1.png to inspect the first supplied sheet, and paths under output/ for rendered views.
+
+Example:
+{"path":"../input/drawings/step-1.png"}
+
+All other tools, native shell calls, raw tool-dispatch JavaScript, delegation and external resource access are rejected by the controller. You can build, inspect geometry, edit files, render images and reload exports through run_python.

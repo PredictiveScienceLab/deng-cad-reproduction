@@ -1,0 +1,8 @@
+{
+  "GATE-EDITABLE-SOURCE": {
+    "satisfied": true,
+    "evidence": [
+      "AI-assisted operator source review of sealed build.py (SHA25696ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840): Dimensions dataclass drives explicit CadQuery primitive construction, fillets, unions, cuts and shared dependency functions. No STEP/BREP loading, encodedshape cache, opaque binary geometry or external source is used for construction. The independent clean rebuild already passed for allsix required exports. Parameter perturbation is not required by the frozen rubric."
+    ]
+  }
+}

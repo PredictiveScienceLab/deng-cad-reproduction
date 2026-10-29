@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "probes": [
+    {
+      "mode": "worker",
+      "passed": true,
+      "ready": true,
+      "controller_exit_code": 143,
+      "cli_pid": 86855,
+      "worker_pid": 86858,
+      "worker_reaped": true,
+      "evidence": "@QUALIFICATION_PROJECT@/trials/preflight-local-20261029T182928"
+    },
+    {
+      "mode": "inference",
+      "passed": true,
+      "ready": true,
+      "controller_exit_code": 143,
+      "cli_pid": 86861,
+      "worker_pid": null,
+      "worker_reaped": true,
+      "evidence": "@QUALIFICATION_PROJECT@/trials/preflight-local-20261029T182929"
+    }
+  ],
+  "real_model_inference": false,
+  "cad_trial_started": false
+}

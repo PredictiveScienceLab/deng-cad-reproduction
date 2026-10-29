@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "started_at_monotonic": 1437364.39751975,
+  "checkpoint_at_monotonic": 1439464.39751975,
+  "deadline_monotonic": 1440964.39751975,
+  "terminal_reason": "agent_finished",
+  "terminal_at_monotonic": 1438039.883468666,
+  "checkpoint": {
+    "label": "35_minute",
+    "cutoff_monotonic": 1439464.39751975,
+    "recorded_at_monotonic": 1438039.883499583,
+    "reason": "early_finish_sealed_result",
+    "snapshot": {
+      "path": "results/trial-001/output",
+      "state_at_monotonic": 1438011.128149458,
+      "copy_completed_at_monotonic": 1438011.138553958,
+      "file_count": 27
+    },
+    "valid": true,
+    "admission": "last_quiescent_state_at_or_before_cutoff"
+  },
+  "final": {
+    "label": "final",
+    "cutoff_monotonic": 1438039.883468666,
+    "recorded_at_monotonic": 1438039.883495,
+    "reason": "agent_finished",
+    "snapshot": {
+      "path": "results/trial-001/output",
+      "state_at_monotonic": 1438011.128149458,
+      "copy_completed_at_monotonic": 1438011.138553958,
+      "file_count": 27
+    },
+    "valid": true,
+    "admission": "last_quiescent_state_at_or_before_cutoff"
+  },
+  "snapshot_count": 29,
+  "operations": [
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437372.935087833,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437372.967651208,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437392.744256875,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437392.954364041,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437397.323454833,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437397.480714833,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437418.140910791,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437418.299610833,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437423.48966625,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437423.57905425,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437429.34506525,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437429.429722041,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437446.34143825,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437446.483475041,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437449.85681075,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437449.943985458,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437471.066062583,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437471.153082833,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437484.243988666,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437484.395531291,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437487.901468375,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437488.00291925,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437513.18188875,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437513.289859208,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437549.003801916,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437549.115849416,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437610.407580125,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437613.248390083,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437677.039854208,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437680.901965791,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437703.359811833,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437706.096103208,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437746.010093166,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437749.976209666,
+      "quiescent": true,
+      "worker_success": false,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437775.290642375,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437778.699153875,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437788.419223833,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437788.483944208,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1437844.894829166,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437855.016331333,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437859.348669208,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437859.460463916,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437869.060097125,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437869.144738666,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437879.553455375,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437879.66932625,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437886.999377625,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437887.070436125,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "check_geometry",
+      "started_at_monotonic": 1437893.586789875,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437915.682332041,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1437938.224833166,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1437938.319541916,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "run_python",
+      "started_at_monotonic": 1438002.010907958,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1438005.102970125,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    },
+    {
+      "kind": "view_image",
+      "started_at_monotonic": 1438011.024535708,
+      "deadline_monotonic": 1439464.39751975,
+      "completed_at_monotonic": 1438011.128149458,
+      "quiescent": true,
+      "worker_success": true,
+      "committed": true
+    }
+  ],
+  "errors": [],
+  "cancelled": true,
+  "stop_callback_sent": true,
+  "scope": "Monotonic wall time; conservative stable snapshots exclude crossing operations. OS termination is bounded cleanup, not real-time enforcement."
+}

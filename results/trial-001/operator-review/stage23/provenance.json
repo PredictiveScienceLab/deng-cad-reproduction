@@ -1,0 +1,63 @@
+{
+  "snapshot": "results/trial-001/output",
+  "snapshot_sha256": "fb664635c2878d731481d4ceaeecc3690d6a634d9c6d4f8ba5da4b9a39c65c66",
+  "rubric": "@ORIGINAL_PROJECT@/quality/frozen/rubric.json",
+  "rubric_sha256": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+  "snapshot_file_hashes_verified": true,
+  "geometry_source": "Independent CadQuery/OCP reimport of sealed STEP only, through frozen execution.run_isolated. Submitted source read as data only; never executed by this review.",
+  "source_read_for_orientation": "results/trial-001/output/build.py",
+  "measurements_use_candidate_parameter_claims": false,
+  "input_STEP_files": {
+    "main-part.step": {
+      "sha256": "9496d40d13f162f90551ed1ba1baf13c1104436278bc4a74ee8f6a5ee43a82c8",
+      "valid": true,
+      "solids": 1
+    },
+    "step-2.step": {
+      "sha256": "93f4f65ed4472065523b6019ec7eb8591c24671b835b0495a26673b69db58d87",
+      "valid": true,
+      "solids": 1
+    },
+    "step-3.step": {
+      "sha256": "584265335f2b1072ef9d1b2f481626a63c10a77b00f63ae970ab0ba120e355eb",
+      "valid": true,
+      "solids": 1
+    }
+  },
+  "worker_result_files": [
+    "inspect_faces.py.result.json",
+    "measure_geometry.py.result.json"
+  ],
+  "source_drawings": "Deng AppendixA Figs11/12 and AppendixB Figs16/17; frozen rubric unchanged",
+  "review_counts": {
+    "correct": 27,
+    "incorrect": 0,
+    "absent": 0,
+    "requires_review": 1,
+    "inconclusive": 0
+  },
+  "open_item": "S3D9 depth definition",
+  "evidence_files": {
+    "inspect_faces.py.result.json": "29914367fd9d0c92dc8b1888fe74d029ff438bf15b5602199100851bbd33c424",
+    "measure_geometry.py": "982a7c7ef8a3c09db0ca940a8866d7facdfed5d72f1a6112a30396d941141fb0",
+    "build_observations.py": "202b137b409fd12977e6b8c7956fdd0a8371fb2245d10d73d2b5fa6ebf6f30f9",
+    "observations.json": "9aed438111db74f160d455fe0c19e9c37a88d241eae9023b9a0d677a67e16839",
+    "scored-preview.json": "8c7816c2fc9fdc4166c45e12e87f4c8c5f022026c5bbbe26a5c102d199939a73",
+    "inspect_faces.py": "034fffddc7f71b2a1ef1721b3320151a73033bffc060f18a1f6cbb67ad2a7275",
+    "run_inspection.py": "a52dc22765c55011bdf1ffad9b82af1ca8a11a1e6b0a6b6e755b4477ca3e1160",
+    "measure_geometry.py.result.json": "80073bd05fa60f8451fd702bba09db043dcffd6ad43cd21cda70060b5cae35c5",
+    "work/faces.json": "7520af99adac16f9a487f86aeb3623a9a8798bc2e847fd87336911d1d8047d1e",
+    "work/transverse_x45.png": "22ef82fe46c68ce58dd303495d783b6965cca91984319055d5ac508fc5f4590d",
+    "work/core_z84.png": "98d1cbca4b078800783a09c5c10e6ccb4a73ce63c8c68508a961d1824eb48327",
+    "work/measured.json": "71b770279f85888ee3203f09757e125b91d127de18e204b50971d7406bb5f6c1",
+    "work/transverse_x45.json": "38343aeb2398e2ae6e5397647c8f2f428e980d0298bbc3b533dd009b2104644f",
+    "work/core_z60.png": "cb9c66534ca414e6e31c2f281d98f6de98c683aee663ba827f68cbe1cfe80f5d",
+    "work/core_z60.json": "517f310beb075e8ae40b481b0fa5cebb4dc564d8c4b7024f838358a0204e550a",
+    "work/axial_y0.png": "d2394ad02dbc95ef3fe324b6af2b107d1d0c24aeb993584be1ae79f28b9e276a",
+    "work/axial_y0.json": "74f5b7d6e2cc8bc17923a202a3317037d448bf67a3cb0991eedba17281215c52",
+    "work/core_z84.json": "9ab11dcc86952a902c5daf6c2c4a793bd800c3078409e4cbef8e89acc4dcc404",
+    "control/worker-result.json": "891a688e91b681ae842cf8465a3ddf2cea850adc0e2fdc7384e33dcdaecf041c",
+    "scratch/matplotlib/fontlist-v3.11.0.json": "76ed647e92dcb5ea598d327115dcba1a1528711879b991f828b68f1f513f002a",
+    "scratch/cache/ezdxf/font_manager_cache.json": "f72919b1dc56f9e2cbd5d773420603c0a477b9ad7ae8fd71a93f16f18fbd5d41"
+  }
+}

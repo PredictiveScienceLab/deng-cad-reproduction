@@ -1,0 +1,32 @@
+AI-assisted source/dependency review, not human signoff.
+Submitted build.py was read as text only; it was not imported or executed by
+this reviewer. Binding is in evidence/binding.json.
+
+Master contact: build.py lines91-99 constructs exterior(p) using the shared
+Dimensions object's body diameter, shoulder/front stations and taper angle.
+stage1() uses that same master for the main body (111-119) and returns it.
+build() obtains the master at211 and passes it to make_stand at218.
+make_stand builds plate/rib stock then subtracts master_contact at192. This
+actual cut drives cylinder, cone, shoulder, and upright supporting surfaces.
+The exported stand is this function result, at219. It is not dead code.
+
+Hole dependence: bolt_centers(pitch), lines88-89, supplies the main front
+flange holes at117-118. make_stand uses the same p.front_hole_pitch and same
+bolt_centers at197-200, filters the lower pair, and uses the same flange_hole_d.
+Both parts share the same Dimensions instance P; coordinates are not re-entered
+as independent literal hole locations. The upright axial station also uses
+the main-body p.front_x at187 and200.
+
+Independent geometry confirms the dependency's nominal output: support areas
+match final main exactly, zero overlap, both upright/flange hole axes at
+y=+/-25,z=-25 have radius5, and both nominal through cylinders x120..142 have
+zero intersection volume with either part. Source comments are not the sole
+evidence. The frozen independent clean rebuild has zero symmetric-difference
+volume for all six required STEP exports, binding the executed procedural
+source to submitted geometry. No parameter perturbation was needed or used.
+
+Cumulative source chain: build lines211-217 passes stage1 -> stage2 -> stage3
+and exports identical 'three' to step-3.step and main-part.step. Stage2 adds
+the radiator and recuts bore_tools at131-133. Stage3 adds tabs, the two side
+holes and the tilted port; it recuts the same bore_tools at172. Stand creation
+uses an independent stock shape and does not replace/mutate 'three'.

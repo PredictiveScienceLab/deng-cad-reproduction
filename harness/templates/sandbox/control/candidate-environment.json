@@ -1,0 +1,10 @@
+{
+  "PATH": "@RUNTIME@/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+  "TMPDIR": "@PROJECT@/sandbox/candidate/tmp",
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "PYTHONNOUSERSITE": "1",
+  "MPLCONFIGDIR": "@PROJECT@/sandbox/candidate/tmp/matplotlib",
+  "XDG_CACHE_HOME": "@PROJECT@/sandbox/candidate/tmp/cache",
+  "LANG": "en_US.UTF-8",
+  "LC_ALL": "en_US.UTF-8"
+}

@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "source": "Deng CAD experiment restricted macOS harness, protocol v3",
+  "files": [
+    {
+      "source_relative_path": "sandbox/control/candidate-environment.json",
+      "original_sha256": "03cc9e089ba5cc5038e4b71909b521d71424a60093532d975b99317ebd29fc26",
+      "template_sha256": "79bfc52184aa27d246c0d2beec8ca9de9994b2e07fec03e998e0b2fa08a9eeeb",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/controller.py",
+      "original_sha256": "ebf5ffa74006f6d1a2de97e5ef58f36f7fb09b4f671fbc2e8b6397c80cbecf89",
+      "template_sha256": "ebf5ffa74006f6d1a2de97e5ef58f36f7fb09b4f671fbc2e8b6397c80cbecf89",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/qualify.py",
+      "original_sha256": "aa9316dcea62c9898971d4595a39b6fa01478aedba605a8c985b3217589ebdd7",
+      "template_sha256": "3e0b3b85bcd4d58f6fab5a94abf9374233db24cdfbda582a93ca1244687b71db",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens",
+        "Replace paper/private sibling-project negative controls with synthetic protected canaries and held-out rubric"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/test_controller.py",
+      "original_sha256": "e3c4060eafe1607539719d93383047c271691bdb0f67b98a63fc5452a9a9b91e",
+      "template_sha256": "e3c4060eafe1607539719d93383047c271691bdb0f67b98a63fc5452a9a9b91e",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/broker.py",
+      "original_sha256": "e44b3a32b853cbc990488741f65d49634760ae5821f55e58baeb00a156b9e144",
+      "template_sha256": "df856807e8600b794fa53d5b3fef21c5e92b05c2b40481928e7da0e2707a9020",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/broker_server.py",
+      "original_sha256": "35bbb37c7a39c48c81cd52c0950c060c5be3b7a6f53cac55f97c4cb850f259e0",
+      "template_sha256": "35bbb37c7a39c48c81cd52c0950c060c5be3b7a6f53cac55f97c4cb850f259e0",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/mcp_relay.py",
+      "original_sha256": "72748d29e7636cda72d70bb0071765d26a121503e1f4f341beb0fc30fd26d4f5",
+      "template_sha256": "72748d29e7636cda72d70bb0071765d26a121503e1f4f341beb0fc30fd26d4f5",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/qualify_integration.py",
+      "original_sha256": "0accc4b3c4b51a72fc7e152cc464b42de518e384fd1362ceffc4c85a167d5b3c",
+      "template_sha256": "1e9d5de7aca379cefd1f2bd346e2b7092d9a91f27a16034a3c32c8b236e24d92",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/qualify_workers.py",
+      "original_sha256": "dd65c7619e1585b6c81b76dd83f4c96f2d8d99dce00a7ad7ae2cf24336048b79",
+      "template_sha256": "dd65c7619e1585b6c81b76dd83f4c96f2d8d99dce00a7ad7ae2cf24336048b79",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/test_tool_gate.py",
+      "original_sha256": "15c9312b39c7c6768c133da16c8504edb5f99459effb7ebae59f683c6c27d601",
+      "template_sha256": "15c9312b39c7c6768c133da16c8504edb5f99459effb7ebae59f683c6c27d601",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/test_worker_supervisor.py",
+      "original_sha256": "93b3b53e1ac3214098dea217df899d79933da4e0c1ecf9ddafb3390628af1162",
+      "template_sha256": "93b3b53e1ac3214098dea217df899d79933da4e0c1ecf9ddafb3390628af1162",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/tool-instructions.txt",
+      "original_sha256": "ec5c4e324a4ed57ca06f5745a395a0f892cd2547ab52d88d54b6e755e07d25c1",
+      "template_sha256": "ec5c4e324a4ed57ca06f5745a395a0f892cd2547ab52d88d54b6e755e07d25c1",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/tool_gate.py",
+      "original_sha256": "e5fc1eda87db3efaa7a9c173909cdb85c81d9132e93aaeb5fbb1acd09811509d",
+      "template_sha256": "e5fc1eda87db3efaa7a9c173909cdb85c81d9132e93aaeb5fbb1acd09811509d",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/worker.sb",
+      "original_sha256": "fc3006060bd4fc01a6cb2686a6b995d6fe6c406f091f5abf558cf153e14796d7",
+      "template_sha256": "3b3039f5507ea0389d3dd4a70a5efde18d4e0c5c14ba18f0b1a800f1514961cb",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v2/worker_supervisor.py",
+      "original_sha256": "90c33add79810097c2860432ad799ae96d95c753c4cf251e415fcb313625a9c7",
+      "template_sha256": "90c33add79810097c2860432ad799ae96d95c753c4cf251e415fcb313625a9c7",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/broker_server_v3.py",
+      "original_sha256": "f04220e0b366afbecb58ad2f859289d497e8a6feadbdbed0fa59b54e7824373a",
+      "template_sha256": "f04220e0b366afbecb58ad2f859289d497e8a6feadbdbed0fa59b54e7824373a",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/broker_v3.py",
+      "original_sha256": "415a22d6948ca640b864f76f0f515cf79a4dbed2e502bc22ecc1904705312111",
+      "template_sha256": "f077055053384c4b64d3be08ed339685daabf658ad62b6bb185b00156d370818",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/client_config.py",
+      "original_sha256": "777fb583a6bac61986fc89a058aa07d18e5a43187d9fefeee36c33633ce6038c",
+      "template_sha256": "823b46857495f62b089eebbbc61205037a2da589f4968968187f4318afab29a4",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/execution_limits.py",
+      "original_sha256": "4e53373565d6b665bc0847307324d8d8cd99cd25c6b03d876bf4058f9a96a79f",
+      "template_sha256": "4e53373565d6b665bc0847307324d8d8cd99cd25c6b03d876bf4058f9a96a79f",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/launch_signals.py",
+      "original_sha256": "d4b7839cc595f7c664c2cec2dadab2b4e7b56b3d547fad9f436270e14cda0352",
+      "template_sha256": "d4b7839cc595f7c664c2cec2dadab2b4e7b56b3d547fad9f436270e14cda0352",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/live_gateway.py",
+      "original_sha256": "81fd021a83449031038d8cef1ad24ea50386d5d32696fc13e01732f54ea378eb",
+      "template_sha256": "fcc373a94079378b25e56252cd73578a0cfa41cf6318a92d1dc13f3572b41105",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens",
+        "Explicit auth-file path and live-switch environment required; never discover/copy user login",
+        "Reject authentication paths inside either candidate-readable runtime or materialized project"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/preflight.py",
+      "original_sha256": "1f4cb2ff25399d22bd2490f3c1bf78d6075b0cbe05166fc799b3853b9f1783f8",
+      "template_sha256": "1f4cb2ff25399d22bd2490f3c1bf78d6075b0cbe05166fc799b3853b9f1783f8",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/qualify_cli_v3.py",
+      "original_sha256": "85695fa49cfe03235b58296fc59a04e2977a6e8eb393cb08e1857b9b056f1d37",
+      "template_sha256": "313792afd88238224a8e67efb85463a218ec74fe61c62fa2ec57cd2bb56c0519",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/qualify_deadlines_v3.py",
+      "original_sha256": "4838f3af3023c0464d63c16a39e69174b2936cb1dccaac318a0c0fcf98ff2a71",
+      "template_sha256": "4838f3af3023c0464d63c16a39e69174b2936cb1dccaac318a0c0fcf98ff2a71",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/qualify_signals.py",
+      "original_sha256": "c183f1dadf1f2a4fddf58a961d1300256cd22bff94e4dbd52af9a0384c3eab2b",
+      "template_sha256": "c183f1dadf1f2a4fddf58a961d1300256cd22bff94e4dbd52af9a0384c3eab2b",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/qualify_timing_integration.py",
+      "original_sha256": "bb22cdfa8717cecefc317e8ba17fbf29be01434a513c13b647dc1222e554f8df",
+      "template_sha256": "bb22cdfa8717cecefc317e8ba17fbf29be01434a513c13b647dc1222e554f8df",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/run_trial.py",
+      "original_sha256": "6ff5bcedaac3523120a318868ea6666033c73623434a41b7256142304157e6de",
+      "template_sha256": "72d9f457bdd38bac7dc59097a2259a78073f35faee68f7b039543667258d76db",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens",
+        "Replace historical conversation authorization with explicit current live-switch authorization"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/test_broker_v3.py",
+      "original_sha256": "d3f37564df63439111df09847eb1d61872016dacb7c2872e58a33fd7ce44aa9b",
+      "template_sha256": "d3f37564df63439111df09847eb1d61872016dacb7c2872e58a33fd7ce44aa9b",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/test_live_gateway.py",
+      "original_sha256": "bb465def5d796f87e965e80be74a79a757bac3ee8e93fb161a5bbe3430f116f0",
+      "template_sha256": "df10ba5e5bc19ccef0588832faef0ba9c026399b4ffed96d6dda36ce22754b65",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens",
+        "Add no-live transport, explicit-auth and candidate-readable auth-path rejection tests"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/test_trial_timeline.py",
+      "original_sha256": "fb5f676c5a3821ddfee14756467a7e675ff7f68b54e9db93dd9ece9e38cf2a1c",
+      "template_sha256": "fcc19af6edee3de7fedc2b4433e0e05cfd2b7c46591bbe5d9e015836ca4b3e10",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/tool-instructions.txt",
+      "original_sha256": "9979c5a1fc411915ef2ca58c8e56dad6fad1f0c3fb9a9c7fd4f77ff85356ae14",
+      "template_sha256": "9979c5a1fc411915ef2ca58c8e56dad6fad1f0c3fb9a9c7fd4f77ff85356ae14",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/tool_gate_v3.py",
+      "original_sha256": "577accac4a875b685348b4653f46cf996fcc6bd4401a92e219399cd82e6222b5",
+      "template_sha256": "577accac4a875b685348b4653f46cf996fcc6bd4401a92e219399cd82e6222b5",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/controller/v3/trial_timeline.py",
+      "original_sha256": "7ad485e599f149d7abf3ba7c07a3ad362f71ae2cb2a7c4a999fe2f28fb334c1d",
+      "template_sha256": "7ad485e599f149d7abf3ba7c07a3ad362f71ae2cb2a7c4a999fe2f28fb334c1d",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    },
+    {
+      "source_relative_path": "sandbox/profile.toml",
+      "original_sha256": "106c64be77749c7f6cb84165fc63b131c5def9c774a1f557e48209953ecb132a",
+      "template_sha256": "cd56f368ea5522ce14c30ae41eea1bfd84928675f8455e6832ea64a5e12c3fd6",
+      "changes": [
+        "Replace original project/runtime prefixes with materialization tokens"
+      ]
+    }
+  ],
+  "credentials_or_sessions_copied": false
+}

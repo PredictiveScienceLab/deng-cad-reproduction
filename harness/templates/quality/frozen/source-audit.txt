@@ -1,0 +1,62 @@
+Deng CAD quality rubric source audit
+Prepared for evaluator development; no candidate CAD or model trial was run.
+
+Primary source
+- Deng, Chen and Olechowski, What Sets Proficient and Expert Users Apart? Results of a Computer-Aided Design Experiment, Journal of Mechanical Design 146, 011401 (2024), DOI10.1115/1.4063360.
+- Local source: /Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/source/deng-2024.pdf
+- SHA256: cf9f4d937e3b9f83d674b090403f17c6226d9cbe8391369008eefd287a93b13f
+- Author URL: https://felix-deng.github.io/files/papers/jmd24.pdf
+- Appendix A participant drawings: PDF pages11-13, Figs10-14. Appendix B grading drawings: PDF pages14-15, Figs15-18. All five pages visually inspected from200dpi Poppler renders; the small-flange keyway was additionally inspected at400dpi.
+- Existing tesla-valve temporary copy has the identical SHA256. Rubric extraction uses the owning deng-cad-2024 source.
+
+The denominator discrepancy
+Section3.4, PDF page5, explicitly claims60 grading dimensions and defines completeness as attempted/60 and correctness as correct/attempted. Visual enumeration finds:
+  Fig15: S1D1 through S1D22 =22
+  Fig16: S2D1 through S2D14 =14
+  Fig17: S3D1 through S3D14 =14
+  Fig18: S4D1 through S4D11 =11
+  Total distinct numbered criteria =61.
+Fig17 S3D6-Alt is an alternative measurement ofS3D6, explicitly conditional on correct main-cylinder diameter, and is not another point. The61 entries comprise53 numerical or compound numerical criteria and8 qualitative criteria. The latter include two separately numbered no-obvious-errors items, six geometric relations, and do not consist only of dimensions.
+No published-source instruction identifies one label to omit, merge or leave unscored. The original60-item denominator therefore remains unreconciled. It would be unjustified to silently drop either of the no-obvious-errors labels or one correlated dimension. This adapted rubric retains all61 labels at unit weight. Scores must be named adapted61-criterion scores; they must not be represented as exact reproduction of the paper's60-dimension results. The named labels and their outcomes remain the primary auditable evidence.
+S2D9 is algebraically dependent onS2D11 andS2D12 (5*4+4*4=36mm). S1D22 andS2D14 overlap general integrity checks at different stages. These dependencies are disclosed, not used to reduce the denominator.
+
+Task and scoring boundaries
+The published comparison uses35minutes for modeling Task1. Task2 modification is excluded from this paper. Section3.3 says detailed drawing PDFs for all steps were already stored in the Onshape document at task access. The precise original instruction packet and any instruction about reading ahead are not established by that statement alone. The paper does not state numeric scoring tolerances. It anticipated incomplete models; expert mean completeness80percent is not a completion rate or a measure of time to finish.
+No manufacturing-purpose context was provided (PDF page11). Thermal, hydraulic or fabrication performance are not additional acceptance criteria. The separate supporting stand is explicitly required in AppendixA. Fig14 expressly requires supporting surfaces and hole locations to match and be driven by main-body geometry. Nominal fit and source/dependency evidence are required. An optional parameter-perturbation test can add evidence about editability but is not another mandatory hurdle or a claimed replication of the human experiment.
+
+Measurement conventions
+Rigid registration may align the complete assembly; it must preserve relative component transforms and must not scale geometry. Convenient evaluator datums are the main passage axis, large-flange outer face at axial0, small-flange outer face at axial142, and the radiator side as the positive transverse vertical direction. These are inferred evaluator coordinates, not an imposed candidate authoring frame.
+Measure independently imported STEP geometry and geometry rebuilt from source. A candidate's dimension dictionary is not proof. For repeated dimensions every specified instance must pass, and hole-count and pattern association must be checked. A single matching hole must not certify a4X specification. Distinguish missing geometry from failure to associate an imported face: the latter requires review.
+Direct and exact-derived lengths use absolute0.01mm tolerance; angles use0.1degree. These are benchmark choices, not paper-stated manufacturing tolerances. Explicit integer dimensions are not treated as rounded to plus/minus0.5mm. S1D4,S1D13 andS3D2 use printed0.01mm rounding intervals plus0.001mm numerical margin. Boolean comparison tolerance is max(1e-9mm3,1e-8*relevant part volume), separate from dimensional tolerance.
+
+Important transcriptions and derived measurements
+- S1D6 uses hole center axes, not the7mm closest circular-boundary clearance.
+- S1D15 is the small-flange keyway width5mm.
+- S1D16 is the distance10mm from the small-flange top edge to the KEYWAY TOP. The grading extension line originates at that notch; checking only the coincident upper mounting-hole level is insufficient. Participant Fig10 gives keyway top25mm above the axis;35-25=10mm.
+- S1D4 refers to the tapered bore at its junction with the small counterbore, not the open40mm counterbore diameter. The exact3degree construction over135mm gives45-270*tan(3degrees)=30.8498995936mm, compatible with printed30.85.
+- S1D13 refers to the outer cone's large diameter, not the adjacent70mm straight cylinder. A7degree taper over50mm gives50+100*tan(7degrees)=62.2784560903mm, compatible with printed62.28.
+- S2D7 is the4mm top circular boss thickness;S2D9 is the36mm fin stack without that boss;S2D11 andS2D12 specify five4mm fins and four4mm gaps.
+- S2D13 requires the rounded-square core section to reach the top flange. An external fin silhouette does not establish the inner section between fins.
+- S3D1 supplies an evaluator-only inner bore surface area815.240mm2 and through-hole requirement. The area is not in participant input. The exact face selection and tolerance are not specified in the paper. Use the intended inner tilted-bore faces, allowing equivalent face splits; leave association unresolved if uncertain. This rubric uses the printed0.001mm2 interval plus0.1mm2 numerical margin as an explicit adaptation. Bore diameter and through connectivity still require independent checks.
+- S3D2 is the35.78mm center-to-terminal-face measurement in the grading screenshot. It appears to refer to the TOP circular face center, rather than the participant drawing's37mm base-center station. The inferred relation37-10*sin(7degrees)=35.7813065659mm reconciles them. This is a stated inference, not a textual definition from the paper; confirm the feature association before scoring.
+- S3D6-Alt25mm is usable only after independently confirming the70mm main-cylinder diameter;35+25=60. Do not score the alternative independently or let it pass when the supporting diameter is wrong.
+- S3D7/S3D8 apply to both angled tabs, as the participant drawing shows2X diameter12 and2X20.
+- S3D9 includes both8.5mm diameter and5mm blind depth of the paired side holes. S3D13 andS3D14 supply location and symmetry relations; size alone is insufficient.
+- S4D6 derives a7mm nearest slot-edge margin from70mm base width,48mm slot-center separation and8mm slot width: (70-48)/2-4=7.
+- S4D2 nominal support conformity is not proof that the stand is driven by the body in editable source. Keep the separate dependency review visible.
+
+Automation and manual review
+All61 criteria carry measurement_kind, expected values or relations, source references, tolerance conventions, automation_group and evaluation_method. These fields describe intended verification, not completed software coverage. The geometry implementation must declare which criteria it actually measures. Unsupported measurements stay requires_review; they never become pass by default. Ambiguous mapping stays inconclusive/requires_review until independent evidence resolves it.
+S1D15/S1D16 keyway association, S3D1 area selection, S3D2 top-face association, qualitative relations, stage-specific failed-feature history and source dependencies deserve explicit operator review unless a qualified extractor supplies equivalent evidence. Review decisions must bind to the exact rubric and candidate snapshot hashes. Earlier-stage checks must also be considered against final cumulative geometry so an old passing snapshot cannot conceal later mutations.
+
+Acceptance and reporting
+Require all61 criteria correct plus independent rebuild/export integrity, separate stand, cumulative-feature retention and supporting-geometry dependency review. Missing required evidence cannot be interpreted as acceptance. Fixed-denominator confirmed-correct/61 is the primary aggregate; report attempted/61 and conditional correctness as supplemental metrics with unresolved counts. Keep35minute results distinct from later completion. CadQuery and automated feedback alter the tool conditions compared with the paper's Onshape users, and BRep equivalence alone does not establish equivalent editable feature trees, modeling expertise or measured human labor savings.
+
+Required geometric conditions alongside numerical dimensions (review update)
+S1D2 andS1D17 each now carry required_conditions[through]: all four mounting holes must pass through the complete flange thickness. S3D7 similarly carries a through condition for both angled-tab holes, as shown in the participant sectional view. These conditions do not create additional points or change numerical targets. A diameter may be numerically correct while the criterion fails because its hole is blind; the numeric scorer must retain geometric-condition failures. If a qualified automatic check is unavailable, an explicit operator condition decision is required. Missing condition evidence remains unresolved, never an implicit pass.
+S2D3 already includes its explicit through connection as a required qualitative component of the compound criterion. S3D1 likewise combines tilted-bore area and its through connection;S3D9 combines diameters, depths and blind-hole termination. Those relations remain mandatory and must not be discarded when numerical components pass. No additional duplicate point or condition was introduced for those already protected compound criteria.
+
+Independent transcription and coverage review
+A second visual audit found no incorrect nominal values across all 61 numbered items. It expanded required measurement multiplicities while retaining printed multiplicities: S1D6/S1D18 need eight offsets across four holes; S2D4 needs ten width/depth measurements across five fins; S2D6 needs twenty corner radii across five fins. This changes neither criterion count nor weighting.
+Appendix A Fig.14 explicitly gives the stand overall height 80 mm and base length 130 mm, which are not directly stated in the numbered Appendix B labels. SUP-STAND-DIMENSIONS therefore requires those values plus the explicitly shown 20 mm slot-end-to-upright spacing (both slots) and 48 mm slot-center separation. These are unscored acceptance checks, preserving the adapted61 denominator. The latter distances overlap other dimensions and are retained as independent original-drawing compliance checks.
+S4D2's note now consistently makes parameter perturbation optional, and S3D9 describes blind holes in the sides rather than through the sides.

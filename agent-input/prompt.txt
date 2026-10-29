@@ -1,0 +1,34 @@
+Reconstruct the complete 3D CAD model specified by the five supplied drawing sheets. Start from an empty model and complete all four stages, including the separate supporting stand. Use millimeters and preserve the dimensions, geometric relationships, and instructions on the sheets.
+
+Inputs
+- drawings/step-1.png
+- drawings/step-2.png
+- drawings/step-3.png
+- drawings/step-4-assembly.png
+- drawings/step-4-stand.png
+- drawings.pdf contains the same five sheets in that order.
+
+Inspect the drawings visually. You may inspect all sheets in any order and choose your modeling method. Some dimensions are redundant or rounded; interpret them consistently and document any unresolved ambiguity. Maintain modeling quality as you work.
+
+Environment and checks
+Use the supplied Python and CadQuery environment and local software documentation. Dependencies are already installed. You may inspect their APIs locally. Do not install packages.
+
+Build, render, measure, inspect, and repair your model using the available tools. The full geometry checker may be called up to four times. Ordinary builds, renders, and your own measurements are allowed throughout. The supplied tool instructions describe how to invoke these tools. Geometry diagnostics do not establish compliance with every drawing requirement.
+
+Use only the supplied input pack, your workspace, the CAD environment, and local software documentation. Do not access external designs, reference solutions, other attempts, or files outside these permitted locations. Do not use network access or delegate work to other agents.
+
+Deliverables
+Save the following under output/:
+- build.py and any helper source files: editable, parameterized CAD source. Running "python output/build.py" from the workspace root must regenerate all required STEP exports without manual intervention.
+- step-1.step, step-2.step, and step-3.step: the model at the completion of each of the first three stages.
+- main-part.step: the completed main part.
+- stand.step: the supporting stand as a separate solid. Its supporting geometry and hole locations must be driven by the main-part geometry, as instructed on the drawing.
+- assembly.step: the completed main part and stand in their specified relative positions, retained as separate parts.
+- README.txt: the rebuild command, coordinate convention, any unresolved drawing ambiguity or incomplete feature, and a concise account of the checks actually performed.
+
+Reload the exported geometry and inspect rendered views and sections before submitting. Correct problems you find within the available time. Do not substitute a written claim of completion for the required source and CAD files.
+
+Timing
+The harness records an immutable progress snapshot at 35 minutes and stops execution at 60 minutes. Time includes reading, modeling, builds, inspection, checks, and repairs. Save source and usable exports throughout; the harness takes the snapshot automatically. You may finish earlier once the model is complete and inspected.
+
+Your final response should briefly identify the deliverables and any unresolved issues.

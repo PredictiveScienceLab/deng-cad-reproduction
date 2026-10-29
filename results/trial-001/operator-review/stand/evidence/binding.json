@@ -1,0 +1,34 @@
+{
+  "snapshot_path": "results/trial-001/output",
+  "snapshot_files_digest_sha256": "fb664635c2878d731481d4ceaeecc3690d6a634d9c6d4f8ba5da4b9a39c65c66",
+  "snapshot_manifest_raw_sha256": "3117c81c1ad275fbb4c27db341949d532c8dd9a65e3a755ec1a5152a9126e544",
+  "rubric_sha256": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+  "all_snapshot_file_hashes_verified": true,
+  "candidate_source_executed_by_this_reviewer": false,
+  "build_py_sha256": "96ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840",
+  "provided_evaluation_sha256": "8ca11c4fce0c285bed60872c5b551c4d5716714453951526580f1b35edd065eb",
+  "peer_evidence": [
+    {
+      "source": "results/trial-001/operator-review/root/work/keyway.json",
+      "sha256": "3d1ffa9c5f6132cdaf2e92ab3bafa233d01b9ec9e474a5218ebfb02ace79c258"
+    },
+    {
+      "source": "results/trial-001/operator-review/stage23/work/measured.json",
+      "sha256": "71b770279f85888ee3203f09757e125b91d127de18e204b50971d7406bb5f6c1"
+    }
+  ],
+  "native_cad_workers": [
+    {
+      "record": "results/trial-001/operator-review/stand/evidence/control/worker-result.json",
+      "sha256": "c94a73ea1f4f716e4e8fba53efef3e9d32afe33cf76dbbcd77af463b809e7764",
+      "success": true,
+      "worker_reaped": true
+    },
+    {
+      "record": "results/trial-001/operator-review/stand/evidence/control-contact/worker-result.json",
+      "sha256": "70de44622357e204cd0ce64dacca2dd817bcb5dac5f6058a7deba5d9c8d6b481",
+      "success": true,
+      "worker_reaped": true
+    }
+  ]
+}

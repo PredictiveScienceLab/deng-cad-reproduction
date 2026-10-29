@@ -1,0 +1,27 @@
+{
+  "S1D15": {
+    "feature_present": true,
+    "values": [
+      5.0
+    ],
+    "evidence": [
+      "Independent restricted STEP measurement: step-1.step and main-part.step faces16/17 are the keyway walls atY=+2.5 andY=-2.5 overX=135..142, extending fromZ\u224819.8431 to25; separation5mm. Face15 is the5x7mm keyway roof. See operator-review/root/work/keyway.json."
+    ]
+  },
+  "S1D16": {
+    "feature_present": true,
+    "values": [
+      10.0
+    ],
+    "evidence": [
+      "Independent restricted STEP measurement in both stage1 and finalmain: flangeend face4 reachesZ=35; keywayroof face15 liesZ=25. Roof-to-flange-top distance is10mm. This uses the actual notch, not a coincident bolt-hole height."
+    ]
+  },
+  "S1D22": {
+    "feature_present": true,
+    "satisfied": true,
+    "evidence": [
+      "Frozen independent evaluator confirms step-1.step is one valid finitepositive solid with explicitmm units and no loose geometry; fresh rebuild matches the submitted stage1 geometry. Independent keyway inspection also reports validity and one solid. Reviewed build.py stage1 construction uses explicitflanges/exterior, throughbores and mounting-hole cuts without ignored feature failures."
+    ]
+  }
+}

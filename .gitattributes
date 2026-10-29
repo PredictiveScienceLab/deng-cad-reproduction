@@ -1,0 +1,8 @@
+*.png binary
+*.jpg binary
+*.pdf binary
+*.step binary
+# Preserve historical artifacts and templates byte for byte.
+agent-input/** -text -whitespace
+results/trial-001/output/** -text -whitespace
+harness/templates/** -text -whitespace

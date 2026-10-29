@@ -1,0 +1,641 @@
+{
+  "reviewer": "Codex AI-assisted operator review; not human signoff",
+  "created_utc": "2026-10-29T17:33:08.485140+00:00",
+  "snapshot_sha256": "fb664635c2878d731481d4ceaeecc3690d6a634d9c6d4f8ba5da4b9a39c65c66",
+  "rubric_sha256": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+  "observations": {
+    "S1D15": {
+      "feature_present": true,
+      "values": [
+        5.0
+      ],
+      "evidence": [
+        "Independent restricted STEP measurement: step-1.step and main-part.step faces16/17 are the keyway walls atY=+2.5 andY=-2.5 overX=135..142, extending fromZ\u224819.8431 to25; separation5mm. Face15 is the5x7mm keyway roof. See operator-review/root/work/keyway.json."
+      ]
+    },
+    "S1D16": {
+      "feature_present": true,
+      "values": [
+        10.0
+      ],
+      "evidence": [
+        "Independent restricted STEP measurement in both stage1 and finalmain: flangeend face4 reachesZ=35; keywayroof face15 liesZ=25. Roof-to-flange-top distance is10mm. This uses the actual notch, not a coincident bolt-hole height."
+      ]
+    },
+    "S1D22": {
+      "feature_present": true,
+      "satisfied": true,
+      "evidence": [
+        "Frozen independent evaluator confirms step-1.step is one valid finitepositive solid with explicitmm units and no loose geometry; fresh rebuild matches the submitted stage1 geometry. Independent keyway inspection also reports validity and one solid. Reviewed build.py stage1 construction uses explicitflanges/exterior, throughbores and mounting-hole cuts without ignored feature failures."
+      ]
+    },
+    "S2D1": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/faces.json: main-part.step external stem corner faces26,28,30,33; four independent analytic radii.",
+        "results/trial-001/operator-review/stage23/work/measured.json: stem_exposed_intervals also confirms R8 in every one of the four fin gaps."
+      ],
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D2": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: stem.dimension_face_pairs27/31 and29/34, opposed analytic planes; both40mm.",
+        "results/trial-001/operator-review/stage23/work/measured.json: stem_exposed_intervals confirms40x40 throughout exposed core."
+      ],
+      "values": [
+        40.0,
+        40.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D3": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: radiator, internal cylinder face46 diameter18.",
+        "results/trial-001/operator-review/stage23/work/measured.json: radiator.bore_adjacent_faces=[24,67], joining main-bore cone and top annulus; full radius8.999mm probe from(45,0,0) to(45,0,94.1) intersects material by0mm3.",
+        "results/trial-001/operator-review/stage23/work/axial_y0.png: independently generated axial section visibly connects radiator and main passage."
+      ],
+      "components": {
+        "diameter": {
+          "values": [
+            18.0
+          ]
+        },
+        "through_connection_to_main_bore": {
+          "satisfied": true
+        }
+      }
+    },
+    "S2D4": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: fins lists five separately associated slabs and ten opposed-plane separations; each60mm."
+      ],
+      "values": [
+        60.0,
+        60.0,
+        60.0,
+        60.0,
+        60.0,
+        60.0,
+        60.0,
+        60.0,
+        60.0,
+        60.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D5": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: radiator, external cylindrical face76 has radius22.5mm; distinguished from internal bore face46."
+      ],
+      "values": [
+        45.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D6": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: fins records twenty distinct outer corner cylinders, four per fin; every radius10mm."
+      ],
+      "values": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D7": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: radiator.boss_height, analytic top plane67 atz94 minus top-fin plane78 atz90."
+      ],
+      "values": [
+        4.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D8": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: radiator.axial_station, bore axis face46 atx45 relative large-flange outer face47 atx0; actual axis parallelZ and perpendicular main axisX."
+      ],
+      "values": [
+        45.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D9": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: radiator.stack_height, lowest-fin underside face48 atz54 to highest-fin top face78 atz90; excludes boss."
+      ],
+      "values": [
+        36.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D10": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: radiator.lowest_fin_height, plane48 atz54 above main-cylinder axis face23 atz0."
+      ],
+      "values": [
+        54.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D11": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: fins individually paired faces48/77,95/113,131/149,132/114,96/78; all five thicknesses4mm."
+      ],
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D12": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: fin_gaps from sequential slab plane coordinates[54,58],[62,66],[70,74],[78,82],[86,90]; four clear gaps4mm."
+      ],
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "all_instances_verified": true
+    },
+    "S2D13": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: stem_exposed_intervals shows40x40 flat-side separation andR8 at all exposed levels throughz86, underside of top fin.",
+        "results/trial-001/operator-review/stage23/work/core_z84.png: independent section in highest gap shows rounded-square core with circular bore.",
+        "results/trial-001/operator-review/stage23/work/axial_y0.png: continuous core material joins all five fins; main-part is one valid solid."
+      ],
+      "satisfied": true
+    },
+    "S2D14": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/faces.json: step-2.step independently imported as one valid solid, volume495907.79702990537mm3.",
+        "results/trial-001/evaluation.json: analysis.integrity.files[step-2.step] passes validity/units/loose-topology checks; independent fresh rebuild succeeded and analysis.rebuild_comparison reports symmetric difference0mm3 for step-2.step.",
+        "results/trial-001/operator-review/stage23/work/measured.json: stage2_preservation_region confirms the complete exposed radiator is unchanged in final geometry in both Boolean directions."
+      ],
+      "satisfied": true
+    },
+    "S3D1": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tilted_boss.bore_area_mm2=815.2397542079789 from internal cylinder face25, the complete associated tilted-bore wall.",
+        "results/trial-001/operator-review/stage23/work/faces.json: face25 shares the tilted exterior face19 axis, top annulus22, and main-bore conical faces24/45. These bounds establish the face association independently of the target area.",
+        "results/trial-001/operator-review/stage23/work/measured.json: tilted_boss.through_probe radius5.999mm runs from main-passage interior to above top mouth with0mm3 material intersection.",
+        "results/trial-001/operator-review/stage23/work/axial_y0.png: independently generated section confirms open tilted passage."
+      ],
+      "components": {
+        "inner_bore_surface_area": {
+          "values": [
+            815.2397542079789
+          ]
+        },
+        "through_connection_to_main_bore": {
+          "satisfied": true
+        }
+      }
+    },
+    "S3D2": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tilted_boss outer top-circle center[106.21869343405,0,37.995075538986] from analytic edge on face22 to actual terminal plane4 atx142 gives35.781306565950004mm.",
+        "Source Fig.17 identifies the top circular feature and end face; its inferred top-center datum is used, not participant base-center37mm."
+      ],
+      "values": [
+        35.781306565950004
+      ],
+      "all_instances_verified": true
+    },
+    "S3D3": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tabs independently measures both hole-axis centers to outer end faces63/65 along tab radial directions; results10.000000000006407 and10.000000000002863mm."
+      ],
+      "values": [
+        10.000000000006407,
+        10.000000000002863
+      ],
+      "all_instances_verified": true
+    },
+    "S3D4": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tabs radial directions derive from outer end geometry and are on opposite sides of downwardZ; angles45.0 and45.00000000000203deg."
+      ],
+      "values": [
+        45.0,
+        45.00000000000203
+      ],
+      "all_instances_verified": true
+    },
+    "S3D5": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tabs opposed broad planes38/40 and42/44 have separations9.999999999992255 and9.999999999993669mm."
+      ],
+      "values": [
+        9.999999999992255,
+        9.999999999993669
+      ],
+      "all_instances_verified": true
+    },
+    "S3D6": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tabs outer-end midpoints on faces63/65 projected along their actual radial midlines from main axis give59.99999999999598 and59.999999999995964mm. No alternative dimension used."
+      ],
+      "values": [
+        59.99999999999598,
+        59.999999999995964
+      ],
+      "all_instances_verified": true
+    },
+    "S3D7": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tabs internal cylinders64/66 each have radius6mm and axial length10mm; circular openings on opposed tab planes38/40 and42/44.",
+        "results/trial-001/operator-review/stage23/work/measured.json: both radius5.999mm through probes extend outside both tab faces and intersect0mm3 material.",
+        "results/trial-001/operator-review/stage23/work/transverse_x45.png: independent section shows both tab holes traversing their respective tab thickness."
+      ],
+      "values": [
+        12.0,
+        12.0
+      ],
+      "all_instances_verified": true,
+      "conditions": {
+        "through": true
+      }
+    },
+    "S3D8": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tabs axial face pairs37/39 and41/43 each atx35 andx55; two independently measured widths20mm."
+      ],
+      "values": [
+        20.0,
+        20.0
+      ],
+      "all_instances_verified": true
+    },
+    "S3D9": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: side_blind_holes records independently measured diameters[8.5,8.5] and cylindrical depths[5.0,5.0] from outer-body axis intersection to conical-tip base.",
+        "results/trial-001/operator-review/stage23/work/measured.json: total depth including drill point is[7.553657630869999,7.553657630867001]mm; analytic tip included angles118deg.",
+        "results/trial-001/operator-review/stage23/work/measured.json: closed conical faces61/62 adjoin only cylinder faces35/36; axis material gaps to main passage are both7.30469243687mm. Both holes are independently confirmed blind.",
+        "results/trial-001/operator-review/stage23/work/transverse_x45.png: independent section shows the conical blind ends.",
+        "Frozen rubric/source callout specifies simple blind hole depth5mm but does not explicitly state whether drill-point length is included. Preserve the unregistered datum ambiguity; do not turn it into an assumed pass or failure."
+      ],
+      "status": "requires_review",
+      "attempted": true,
+      "reason": "Both diameters and blind terminations are verified. The5mm depth matches the cylindrical portion; total depth including the conical point is7.55365763mm. Source depth datum is not explicitly resolved.",
+      "components": {
+        "diameter": {
+          "values": [
+            8.5,
+            8.5
+          ],
+          "all_instances_verified": true
+        },
+        "depth": {
+          "values": [
+            5.0,
+            5.0
+          ],
+          "all_instances_verified": true,
+          "datum": "cylindrical portion only; unresolved against drawing callout"
+        },
+        "termination": {
+          "satisfied": true
+        }
+      },
+      "additional_measurements": {
+        "total_depth_including_point": [
+          7.553657630869999,
+          7.553657630867001
+        ],
+        "tip_included_angle_deg": [
+          118.0000000000396,
+          118.0000000000396
+        ],
+        "remaining_axis_material_gap": [
+          7.304692436866858,
+          7.304692436869857
+        ]
+      }
+    },
+    "S3D10": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tilted_boss intersects actual boss axis with analytic supporting cone face13 at[104.99999999999427,0,28.06961402256302], then projects to top center, giving10.000000000010205mm. Actual axis is7deg fromZ; no nominal candidate parameter used."
+      ],
+      "values": [
+        10.000000000010205
+      ],
+      "all_instances_verified": true
+    },
+    "S3D11": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/faces.json: final internal tilted cylinder face25 radius6mm, coaxial with exterior boss19; distinct from tab cylinders64/66."
+      ],
+      "values": [
+        12.0
+      ],
+      "all_instances_verified": true
+    },
+    "S3D12": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/faces.json: final external tilted cylinder face19 radius11mm, independently associated with outer top circle of face22."
+      ],
+      "values": [
+        22.0
+      ],
+      "all_instances_verified": true
+    },
+    "S3D13": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: side-hole axes35/36 lie atx45 with directionX-component0; both tab axial midplanes from faces37/39 and41/43 arex45; radiator axis46 also hasx45.",
+        "results/trial-001/operator-review/stage23/work/faces.json: both tab axial plane normals are parallel main axisX and both side-hole axes are perpendicular toX, so they are contained in the radiator transverse plane rather than merely crossing it."
+      ],
+      "satisfied": true
+    },
+    "S3D14": {
+      "feature_present": true,
+      "origin": "independent_operator_STEP_review",
+      "evidence": [
+        "results/trial-001/operator-review/stage23/work/measured.json: tab_mirror_comparison reflects complete left tab/hole region abouty0; both Boolean difference volumes are0mm3 against right region. Clipping boxes include all exposed tab material and exclude unrelated features.",
+        "results/trial-001/operator-review/stage23/work/measured.json: tabs separately confirms mirrored hole centers and matching axes, opening spans, reach, thickness and width; independent transverse section provides visual corroboration."
+      ],
+      "satisfied": true
+    },
+    "S4D1": {
+      "satisfied": true,
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Stand face0 and main face47 are planes at x=0: displacement0mm; shared assembly frame, no independent registration."
+      ]
+    },
+    "S4D2": {
+      "satisfied": true,
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Rib side faces13/14 lie at y=+/-7.5 (center y=0). Main axis is y=z=0. Rib cylinder face24 and cone face25, upright cone face21, and shoulder face26 each have exactly equal total/common-with-main surface areas. Stand-main overlap0mm3.",
+        "results/trial-001/operator-review/stand/evidence/work-contact/contact-and-holes.json"
+      ]
+    },
+    "S4D3": {
+      "satisfied": true,
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Both upright shoulder planes (stand faces6,20) lie at z=0, identical to the main cylindrical axis z=0; measured shoulder angular directions are parallel to the transverse horizontal plane."
+      ]
+    },
+    "S4D4": {
+      "values": [
+        15.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Rib side planes13/14 at y=+7.5,-7.5 -> width15mm."
+      ]
+    },
+    "S4D5": {
+      "values": [
+        8.0,
+        8.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Negative-y slot walls9/10 at y=-20,-28 and positive-y walls17/19 at y=20,28 -> widths8,8mm. Faces8-11 and16-19 establish two separate openings through z=-80..-70."
+      ]
+    },
+    "S4D6": {
+      "values": [
+        7.0,
+        7.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Outer base sides1/3 at y=-35,+35; near outer slot walls10/19 at y=-28,+28 -> margins7,7mm."
+      ]
+    },
+    "S4D7": {
+      "values": [
+        30.0,
+        30.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Both near slot end planes8/16 lie at x=30, base end plane0 at x=0 -> offsets30,30mm."
+      ]
+    },
+    "S4D8": {
+      "values": [
+        70.0,
+        70.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Slot end planes8/11 and16/18 lie at x=30 and100 -> lengths70,70mm."
+      ]
+    },
+    "S4D9": {
+      "values": [
+        10.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Upright planes5/7 lie at x=120 and130 -> thickness10mm."
+      ]
+    },
+    "S4D10": {
+      "values": [
+        70.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Outside stand side planes1/3 lie at y=-35 and35 -> width70mm."
+      ]
+    },
+    "S4D11": {
+      "values": [
+        10.0
+      ],
+      "feature_present": true,
+      "all_instances_verified": true,
+      "origin": "ai_assisted_operator_geometry_review",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Base lower/upper planes4/2 lie at z=-80,-70 -> thickness10mm."
+      ]
+    }
+  },
+  "supplemental": {
+    "GATE-EDITABLE-SOURCE": {
+      "satisfied": true,
+      "evidence": [
+        "AI-assisted operator source review of sealed build.py (SHA25696ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840): Dimensions dataclass drives explicit CadQuery primitive construction, fillets, unions, cuts and shared dependency functions. No STEP/BREP loading, encodedshape cache, opaque binary geometry or external source is used for construction. The independent clean rebuild already passed for allsix required exports. Parameter perturbation is not required by the frozen rubric."
+      ]
+    },
+    "SUP-STAND-DIMENSIONS": {
+      "components": {
+        "overall_height": {
+          "values": [
+            80.0
+          ]
+        },
+        "base_length": {
+          "values": [
+            130.0
+          ]
+        },
+        "slot_end_to_upright_inner_face": {
+          "values": [
+            20.0,
+            20.0
+          ],
+          "all_instances_verified": true
+        },
+        "slot_center_separation": {
+          "values": [
+            48.0
+          ]
+        }
+      },
+      "feature_present": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "Overall height80mm, base length130mm, both far slot ends x100 to upright inner face x120 ->20mm each, slot centers y=-24,+24 ->48mm. Derived from associated imported B-rep planes, not candidate parameters."
+      ]
+    },
+    "SUP-SEPARATE-STAND": {
+      "satisfied": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "stand.step is one valid positive-volume solid (155495.5351022963mm3); main-part.step is a separate valid solid (504630.73717243987mm3). assembly.step contains two solids; independent symmetric-difference comparisons match one to main and one to stand, both0mm3. Stand supports body at its matched faces and overlap volume0mm3."
+      ]
+    },
+    "SUP-SUPPORT-DEPENDENCIES": {
+      "satisfied": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/source-dependency-review.txt",
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "results/trial-001/operator-review/stand/evidence/work-contact/contact-and-holes.json",
+        "results/trial-001/evaluation.json analysis.rebuild_comparison: all six export symmetric-difference volumes0mm3.",
+        "Submitted build.py SHA256 96ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840; master contact source lines91-99,110-119,180-201,211-219; shared front-hole drivers lines88-89,117-118,197-200."
+      ]
+    },
+    "SUP-CUMULATIVE-GEOMETRY": {
+      "satisfied": true,
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/retention.json",
+        "results/trial-001/operator-review/stand/evidence/root-keyway.json",
+        "results/trial-001/operator-review/stand/evidence/peer-stage23-measured.json",
+        "results/trial-001/operator-review/stand/evidence/source-dependency-review.txt",
+        "Frozen automatic stage1/final measurements preserve flange/body/counterbore dimensions and hole conditions; independent final cone-face association resolves the split-bore retention ambiguity (diameter30.849899593579mm atx135). Root isolated measurements show identical stage1/final keyway planes and validity.",
+        "Independent final-vs-step2 radiator-region forward/reverse differences are both0mm3; region x[14,76],y[-31,31],z[20,95] contains exposed radiator and excludes later features. Step3/final main whole-solid differences are both0mm3. Source chain and clean rebuild bind the staged geometry; expected newly introduced cuts are not treated as retention failures."
+      ]
+    }
+  },
+  "scope": "Independent STEP measurements in restricted workers and source inspection of the sealed final submission. No candidate continuation or rubric changes."
+}

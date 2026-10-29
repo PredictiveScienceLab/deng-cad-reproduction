@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "live_launch_qualified": true,
+  "units_only": false,
+  "real_model_inference": false,
+  "cad_trial_started": false,
+  "model_metadata": "gpt-6.1-sol",
+  "reasoning_effort_metadata": "xhigh",
+  "results": [
+    {
+      "name": "entrypoint-unit",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/entrypoint-unit.log"
+    },
+    {
+      "name": "controller-unit",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/controller-unit.log"
+    },
+    {
+      "name": "v2-unit",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/v2-unit.log"
+    },
+    {
+      "name": "v3-unit",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/v3-unit.log"
+    },
+    {
+      "name": "worker-isolation",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/worker-isolation.log"
+    },
+    {
+      "name": "cli-fixed-responses",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/cli-fixed-responses.log"
+    },
+    {
+      "name": "worker-deadlines",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/worker-deadlines.log"
+    },
+    {
+      "name": "timing-integration",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/timing-integration.log"
+    },
+    {
+      "name": "loopback-preflight",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/loopback-preflight.log"
+    },
+    {
+      "name": "signal-cleanup",
+      "passed": true,
+      "exit_code": 0,
+      "log": "docs/validation/harness/signal-cleanup.log"
+    }
+  ]
+}

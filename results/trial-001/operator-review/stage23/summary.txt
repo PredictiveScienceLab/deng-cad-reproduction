@@ -1,0 +1,31 @@
+Independent operator review of sealed Deng trial001, stage2/3.
+Snapshot: fb664635c2878d731481d4ceaeecc3690d6a634d9c6d4f8ba5da4b9a39c65c66
+Rubric: 6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3
+
+All28 items reviewed:27 correct,0 incorrect,1 requires_review under the unchanged scorer.
+Stage2: all14 correct, including five fins, ten size measurements, twenty corner
+radii, five thicknesses, four gaps, square core continuity and through radiator bore.
+Stage3:13 correct. Tilted-bore area815.2397542079789mm2 and top-center offset
+35.781306565950004mm agree; both tab through-holes and full mirrored tab geometry
+are confirmed. Tilted passage is open into the main bore.
+
+S3D9 remains unresolved: both side holes measure8.5mm diameter and5mm cylindrical
+depth, with118deg drill tips reaching7.55365763mm total depth. Both are blind, with
+7.30469244mm axis material between tips and the main bore. The frozen5mm callout
+has no explicit drill-point datum. Neither a guessed pass nor a failure is assigned.
+
+Retention: final vs step2 within complete exposed radiator region has0mm3
+difference both directions; stage3 vs final has0mm3 difference both directions.
+The final tab/hole pair is mirror-equivalent with0mm3 difference both directions.
+
+All STEP parsing/measurements ran through frozen execution.run_isolated with only
+snapshot/evaluator read roots and private work/scratch/control. Both successful
+workers were reaped. The initial non-escalated supervisor attempt failed before
+parsing due nested sandbox_apply restrictions; the authorized sandbox supervisor
+then ran successfully. No submitted Python was executed by this review.
+
+observations.json is the requested scorer observation map; scored-preview.json
+shows only these28 items. provenance.json records snapshot/rubric/evidence hashes.
+Raw analytic face inventory: work/faces.json. Measurements: work/measured.json.
+Independent sections: work/axial_y0.png, work/transverse_x45.png, work/core_z60.png,
+work/core_z84.png. Own scripts and worker records are retained for reproducibility.

@@ -1,0 +1,17 @@
+SANDBOX TOOLS — FROZEN TRIAL INTERFACE V3
+
+The five original drawing PNGs are attached and also available in ../input/drawings/. The unchanged task prompt, PDF and source notice are in ../input/. Only the following three tools are available.
+
+run_python(source, timeout_seconds=60)
+Execute Python in a fresh process using the installed CadQuery runtime. The current directory is the candidate work directory. Read inputs from ../input/. Save all required source and exports in output/. Files persist; Python variables do not. Use pathlib for files and runpy.run_path to execute saved scripts; there is no shell, subprocess creation, package installation or network. Threads are available. Each call has a maximum of 60 seconds and is bounded by the next checkpoint or final deadline. Text output is bounded. Build, measure, reload exports and render images through this tool.
+
+view_image(path)
+Inspect a PNG/JPEG from the permitted input, work or private scratch directories. Paths are relative to the work directory. For example, ../input/drawings/step-1.png or output/inspection.png. Image decoding and size limits are enforced inside the sandbox.
+
+check_geometry()
+Check the saved output/ files. It takes an empty argument object. At most four calls are allowed, including failed attempts. Save source and STEP exports first. The checker reimports all parts, checks validity/units/solid counts/component consistency, and rebuilds the saved source independently. It returns artifact-integrity and reproducibility diagnostics. A pass does not certify every drawing dimension or design-intent requirement. The checker has a 105-second execution budget and shares the checkpoint/final deadline. It cannot inspect unsaved state. Operator grading targets and scores are not returned.
+
+Timing and saving
+The controller counts all elapsed time, including thinking, tool use and checking. It records the 35-minute checkpoint and stops at 60 minutes. Calls crossing a cutoff are stopped; that cutoff uses the last fully quiescent output state from before the crossing call. Save useful output between calls and avoid leaving all exports until one long final call. Work can continue after the 35-minute checkpoint. If you finish earlier, the final saved result is sealed. The controller supplies remaining time on each model request.
+
+Use only these tools. Other tool families, delegation, raw tool-dispatch JavaScript, external resources and terminal access are unavailable.

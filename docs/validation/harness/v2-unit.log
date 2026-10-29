@@ -1,0 +1,36 @@
+test_bounded_stdin_bytes_are_delivered_without_argv_source (test_worker_supervisor.WorkerSupervisorTests.test_bounded_stdin_bytes_are_delivered_without_argv_source) ... ok
+test_cancellation_terminates_running_worker (test_worker_supervisor.WorkerSupervisorTests.test_cancellation_terminates_running_worker) ... ok
+test_exception_cancellation_still_reaps_worker (test_worker_supervisor.WorkerSupervisorTests.test_exception_cancellation_still_reaps_worker) ... ok
+test_launch_failure_is_not_success (test_worker_supervisor.WorkerSupervisorTests.test_launch_failure_is_not_success) ... ok
+test_normal_worker_and_nonzero_exit (test_worker_supervisor.WorkerSupervisorTests.test_normal_worker_and_nonzero_exit) ... ok
+test_output_limit_is_aggregate_and_exit_zero_does_not_hide_overflow (test_worker_supervisor.WorkerSupervisorTests.test_output_limit_is_aggregate_and_exit_zero_does_not_hide_overflow) ... ok
+test_output_overflow_stops_worker_and_bounds_storage (test_worker_supervisor.WorkerSupervisorTests.test_output_overflow_stops_worker_and_bounds_storage) ... ok
+test_preexisting_cancellation_prevents_launch (test_worker_supervisor.WorkerSupervisorTests.test_preexisting_cancellation_prevents_launch) ... ok
+test_real_nofork_worker_setsid_and_sigterm_ignore_still_killed (test_worker_supervisor.WorkerSupervisorTests.test_real_nofork_worker_setsid_and_sigterm_ignore_still_killed) ... ok
+test_real_seatbelt_blocks_child_creation_preserves_threads (test_worker_supervisor.WorkerSupervisorTests.test_real_seatbelt_blocks_child_creation_preserves_threads) ... ok
+test_stdin_over_limit_and_timeout_over_limit_are_rejected (test_worker_supervisor.WorkerSupervisorTests.test_stdin_over_limit_and_timeout_over_limit_are_rejected) ... ok
+test_trial_deadline_expiry_prevents_launch (test_worker_supervisor.WorkerSupervisorTests.test_trial_deadline_expiry_prevents_launch) ... ok
+test_trial_deadline_shortens_worker_allowance (test_worker_supervisor.WorkerSupervisorTests.test_trial_deadline_shortens_worker_allowance) ... ok
+test_worker_early_exit_does_not_claim_all_input_was_delivered (test_worker_supervisor.WorkerSupervisorTests.test_worker_early_exit_does_not_claim_all_input_was_delivered) ... ok
+test_worker_ignoring_stdin_is_still_timed_out_and_reaped (test_worker_supervisor.WorkerSupervisorTests.test_worker_ignoring_stdin_is_still_timed_out_and_reaped) ... ok
+test_arguments_fail_closed (test_tool_gate.GateTests.test_arguments_fail_closed) ... ok
+test_duplicate_call_ids_and_parallel_calls_rejected (test_tool_gate.GateTests.test_duplicate_call_ids_and_parallel_calls_rejected) ... ok
+test_empty_mapping_and_invalid_backend_rejected (test_tool_gate.GateTests.test_empty_mapping_and_invalid_backend_rejected) ... ok
+test_loopback_end_to_end_and_fail_closed (test_tool_gate.GateTests.test_loopback_end_to_end_and_fail_closed) ... ok
+test_missing_executor_rejected (test_tool_gate.GateTests.test_missing_executor_rejected) ... ok
+test_no_partial_dispatch_if_second_item_invalid (test_tool_gate.GateTests.test_no_partial_dispatch_if_second_item_invalid) ... ok
+test_oversize_source_rejected (test_tool_gate.GateTests.test_oversize_source_rejected) ... ok
+test_raw_js_and_hosted_tools_rejected (test_tool_gate.GateTests.test_raw_js_and_hosted_tools_rejected) ... ok
+test_reject_all_extra_tool_families (test_tool_gate.GateTests.test_reject_all_extra_tool_families) ... ok
+test_remote_endpoint_disabled (test_tool_gate.GateTests.test_remote_endpoint_disabled) ... ok
+test_source_is_json_literal_not_javascript (test_tool_gate.GateTests.test_source_is_json_literal_not_javascript) ... ok
+test_strip_every_original_tool (test_tool_gate.GateTests.test_strip_every_original_tool) ... ok
+test_translation_and_history_roundtrip (test_tool_gate.GateTests.test_translation_and_history_roundtrip) ... ok
+test_truncated_invalid_multiple_sse_rejected (test_tool_gate.GateTests.test_truncated_invalid_multiple_sse_rejected) ... ok
+test_unrecognized_or_modified_history_rejected (test_tool_gate.GateTests.test_unrecognized_or_modified_history_rejected) ... ok
+test_wrong_model_effort_and_hidden_history_rejected (test_tool_gate.GateTests.test_wrong_model_effort_and_hidden_history_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 1.934s
+
+OK

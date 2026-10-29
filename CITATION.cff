@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If using this adaptation, cite the source paper and identify the CadQuery harness and adapted 61-criterion rubric separately."
+title: "Deng drawing-to-CAD agent experiment reproduction"
+type: software
+authors:
+  - family-names: Bilionis
+    given-names: Ilias
+version: 0.1.0
+date-released: 2026-10-29
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Deng
+      given-names: Yuanzhe
+    - family-names: Chen
+      given-names: James
+    - family-names: Olechowski
+      given-names: Alison
+  title: "What Sets Proficient and Expert Users Apart? Results of a Computer-Aided Design Experiment"
+  journal: "Journal of Mechanical Design"
+  volume: 146
+  issue: 1
+  start: "011401"
+  year: 2024
+  doi: 10.1115/1.4063360

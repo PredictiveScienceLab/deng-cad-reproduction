@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "success": true,
+  "status": "completed",
+  "launched": true,
+  "pid": 83351,
+  "returncode": 0,
+  "worker_reaped": true,
+  "timeout_seconds": 60,
+  "effective_deadline_monotonic": 1438367.021070833,
+  "deadline_source": "trial",
+  "containment": "direct_unreaped_child_pid_requires_kernel_no_fork_policy",
+  "controller_death_protection": false,
+  "cleanup_signals": [],
+  "cleanup_errors": [],
+  "stdout": "[Errno 1] Operation not permitted: '/Library/Fonts'\n[Errno 1] Operation not permitted: '/System/Library/Fonts'\n",
+  "stderr": "",
+  "output_bytes_stored": 111,
+  "output_limit_bytes": 2097152,
+  "output_truncated": false,
+  "capture_errors": [],
+  "stdin_bytes_supplied": 901,
+  "stdin_bytes_written": 901,
+  "stdin_error": null,
+  "elapsed_seconds": 2.998257959028706,
+  "output_bytes_observed": {
+    "stdout": 111,
+    "stderr": 0
+  },
+  "policy_sha256": "5d13bc39331914d1f9885575d64c232caf3f7a5e16d9f27d5878c9ca5a4756c8",
+  "source_sha256": "94b3a014ad3201e07972b7ea497d0deebd9d1075567671a902f50ec125c0c895"
+}

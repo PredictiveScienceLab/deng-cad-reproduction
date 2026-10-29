@@ -1,0 +1,27 @@
+{
+  "trial": "trial-001",
+  "status": "finished",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "started_utc": "2026-10-29T17:07:13.236527+00:00",
+  "finished_utc": "2026-10-29T17:18:29.417905+00:00",
+  "elapsed_seconds": 676.1801556658465,
+  "provider_requests": 29,
+  "python_image_calls": 27,
+  "geometry_check_calls": 1,
+  "cli_exit_code": 0,
+  "gateway_errors": [],
+  "launcher_error": null,
+  "stop_reasons": [
+    "agent_finished"
+  ],
+  "quality_freeze_sha256": "c82dc5149b46b39312ed774d86c4ed34076fb141c6ca06c551814239661679ca",
+  "launch_freeze_sha256": "b4ad83a731eaa8eb62aab6d61719d6e943f7ccaa4000e7304ed0eea1a993ad9f",
+  "input_packet_sha256": "9373688ade2eb4643f8d04b30e61c71fc9bb0f17e65b48ddbbe93fa7e7904144",
+  "usage_aggregate": {
+    "input_tokens": 1233237,
+    "output_tokens": 19955,
+    "total_tokens": 1253192
+  },
+  "usage_note": "Summed across provider requests; repeated prompt context is counted repeatedly. No billing amount is inferred."
+}

@@ -1,0 +1,36 @@
+AI-ASSISTED OPERATOR REVIEW: STAND, DEPENDENCIES, AND RETENTION
+Scope: immutable stable-000029 only. No human signoff is claimed.
+No candidate/frozen files changed. Submitted source was read as data only.
+All native STEP parsing/Boolean measurements used frozen run_isolated workers;
+both worker records report success and confirmed reaping.
+
+S4D1-S4D11: 11/11 correct under frozen tolerances and scoring.py.
+S4D1 axial offset0mm; S4D2 centered/full supporting-face contact, overlap0mm3;
+S4D3 both shoulders at main-axis height z0; S4D4 rib15mm;
+S4D5 slot widths8,8mm; S4D6 margins7,7mm; S4D7 offsets30,30mm;
+S4D8 slot lengths70,70mm; S4D9 upright10mm; S4D10 width70mm;
+S4D11 base thickness10mm.
+
+SUP-STAND-DIMENSIONS: satisfied; height80, length130, gaps20/20,
+slot-center separation48mm, each judged with frozen0.01mm tolerance.
+SUP-SEPARATE-STAND: satisfied; two matching distinct assembly components,
+valid stand, independent component differences0mm3, body/stand overlap0mm3.
+SUP-SUPPORT-DEPENDENCIES: satisfied; master exterior directly cuts support
+stock, shared lower-flange hole drivers, matched nominal geometry, clean
+rebuild equivalence. No optional perturbation was required or performed.
+SUP-CUMULATIVE-GEOMETRY: satisfied using stage1/final analytic evidence plus
+root keyway review, peer stage2 preservation comparison, and own whole-solid
+step3/final comparison. Frozen automatic final S1D4 was requires_review due to
+split cone faces; this review resolves retention from their identical analytic
+surface and the x135 shoulder, rather than claiming the automatic item passed.
+The frozen numbered S1D4 score used the correct stage1 fallback; no numbered
+criterion override is needed or supplied by this stand review.
+
+No unresolved stand-specific item or contradiction found. These findings do
+not by themselves establish overall61-criterion acceptance; stages1-3 and
+other gates remain the responsibility of the combined review.
+
+Use observations.json and supplemental.json for merge, or review-combined.json
+for the complete scoring.py operator-review schema. Evidence contains exact
+face indices, measurements, source-line audit, snapshot bindings, worker policy
+hashes, copied peer evidence, and schema/scoring validation.

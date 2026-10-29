@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "report": "@QUALIFICATION_PROJECT@/sandbox/controller/v3/deadline-qualification-20261029T182922/report.json",
+  "probes": [
+    {
+      "probe": "deadline",
+      "passed": true
+    },
+    {
+      "probe": "cancel",
+      "passed": true
+    },
+    {
+      "probe": "already_expired",
+      "passed": true
+    },
+    {
+      "probe": "real_checker_deadline",
+      "passed": true
+    }
+  ]
+}

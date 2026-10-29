@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "success": true,
+  "status": "completed",
+  "launched": true,
+  "pid": 83291,
+  "returncode": 0,
+  "worker_reaped": true,
+  "timeout_seconds": 60,
+  "effective_deadline_monotonic": 1438300.015396916,
+  "deadline_source": "trial",
+  "containment": "direct_unreaped_child_pid_requires_kernel_no_fork_policy",
+  "controller_death_protection": false,
+  "cleanup_signals": [],
+  "cleanup_errors": [],
+  "stdout": "[Errno 1] Operation not permitted: '/Library/Fonts'\n[Errno 1] Operation not permitted: '/System/Library/Fonts'\n{\"stand_faces\": 27, \"main_faces\": 150, \"support_faces\": [{\"stand_face_index\": 21, \"area\": 810.7281619009431, \"common_with_main_area\": 810.7281619009431, \"common_faces\": 1, \"gap_distance_mm\": 7.654042494419584e-16}, {\"stand_face_index\": 24, \"area\": 755.8617453974997, \"common_with_main_area\": 755.8617453974997, \"common_faces\": 1, \"gap_distance_mm\": 3.2797075050535983e-12}, {\"stand_face_index\": 25, \"area\": 305.51910158059263, \"common_with_main_area\": 305.51910158059263, \"common_faces\": 1, \"gap_distance_mm\": 8.881784197001252e-16}], \"step3_main_difference\": {\"missing\": 0.0, \"excess\": 0.0}, \"stand_main_overlap_mm3\": 0.0}\n",
+  "stderr": "",
+  "output_bytes_stored": 735,
+  "output_limit_bytes": 2097152,
+  "output_truncated": false,
+  "capture_errors": [],
+  "stdin_bytes_supplied": 3120,
+  "stdin_bytes_written": 3120,
+  "stdin_error": null,
+  "elapsed_seconds": 8.107063292060047,
+  "output_bytes_observed": {
+    "stdout": 735,
+    "stderr": 0
+  },
+  "policy_sha256": "72b16b58b6cd9c68017dd7fae5065bde2ab0550c494e637446e00d7c96ddd4f8",
+  "source_sha256": "b4169d8d5ef5f95f65b481c76cf48f74220426927fe7111c830fc94dd1b7e908"
+}

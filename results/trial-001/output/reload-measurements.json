@@ -1,0 +1,80 @@
+{
+  "step-1.step": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 381177.2790416021,
+    "bounds_mm": [
+      0.0,
+      142.0,
+      -50.0,
+      50.0,
+      -50.0,
+      50.0
+    ]
+  },
+  "step-2.step": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 495907.79702990537,
+    "bounds_mm": [
+      -1e-07,
+      142.0,
+      -50.0,
+      50.0,
+      -50.0,
+      94.0000001
+    ]
+  },
+  "step-3.step": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 504630.73717243987,
+    "bounds_mm": [
+      -1e-07,
+      142.0,
+      -50.0,
+      50.0,
+      -50.0,
+      94.0000001
+    ]
+  },
+  "main-part.step": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 504630.73717243987,
+    "bounds_mm": [
+      -1e-07,
+      142.0,
+      -50.0,
+      50.0,
+      -50.0,
+      94.0000001
+    ]
+  },
+  "stand.step": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 155495.5351022963,
+    "bounds_mm": [
+      0.0,
+      130.0,
+      -35.0,
+      35.0,
+      -80.0,
+      1.6059923586814163e-15
+    ]
+  },
+  "assembly.step": {
+    "valid": true,
+    "solid_count": 2,
+    "volume_mm3": 660126.2656063205,
+    "bounds_mm": [
+      -1e-07,
+      142.0,
+      -50.0,
+      50.0,
+      -80.0,
+      94.0000001
+    ]
+  }
+}

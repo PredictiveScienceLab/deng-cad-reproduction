@@ -1,0 +1,73 @@
+{"name": "read.input.drawings/step-1.png", "passed": true, "seconds": 0.032}
+{"name": "read.input.drawings/step-2.png", "passed": true, "seconds": 0.032}
+{"name": "read.input.drawings/step-3.png", "passed": true, "seconds": 0.032}
+{"name": "read.input.drawings/step-4-assembly.png", "passed": true, "seconds": 0.032}
+{"name": "read.input.drawings/step-4-stand.png", "passed": true, "seconds": 0.032}
+{"name": "read.input.drawings.pdf", "passed": true, "seconds": 0.041}
+{"name": "read.input.prompt.txt", "passed": true, "seconds": 0.031}
+{"name": "read.input.source-notice.txt", "passed": true, "seconds": 0.031}
+{"name": "write.work", "passed": true, "seconds": 0.027}
+{"name": "write.private_tmp", "passed": true, "seconds": 0.026}
+{"name": "clean.environment", "passed": true, "seconds": 0.023}
+{"name": "read.denied.operator_canary", "passed": true, "seconds": 0.02}
+{"name": "read.denied.sibling_temp_canary", "passed": true, "seconds": 0.021}
+{"name": "read.denied.heldout_rubric", "passed": true, "seconds": 0.023}
+{"name": "read.denied.review_notes", "passed": true, "seconds": 0.02}
+{"name": "read.denied.unrelated_project", "passed": true, "seconds": 0.021}
+{"name": "read.denied.controller_source", "passed": true, "seconds": 0.022}
+{"name": "read.denied.profile", "passed": true, "seconds": 0.02}
+{"name": "list.operator_directory", "passed": true, "seconds": 0.021}
+{"name": "write.input", "passed": true, "seconds": 0.023}
+{"name": "write.runtime", "passed": true, "seconds": 0.023}
+{"name": "write.operator_canary", "passed": true, "seconds": 0.023}
+{"name": "write.shared_tmp", "passed": true, "seconds": 0.02}
+{"name": "write.controller", "passed": true, "seconds": 0.022}
+{"name": "read.symlink_escape", "passed": true, "seconds": 0.023}
+{"name": "write.symlink_escape", "passed": true, "seconds": 0.021}
+{"name": "read.path_traversal", "passed": true, "seconds": 0.031}
+{"name": "hardlink.outside", "passed": true, "seconds": 0.023}
+{"name": "shell.cat_denied", "passed": true, "seconds": 0.031}
+{"name": "search.grep_denied", "passed": true, "seconds": 0.031}
+{"name": "subprocess.policy_inherited", "passed": true, "seconds": 0.061}
+{"name": "image.python_allowed", "passed": true, "seconds": 0.082}
+{"name": "image.python_denied", "passed": true, "seconds": 0.042}
+{"name": "network.external_tcp", "passed": true, "seconds": 0.031}
+{"name": "network.external_udp", "passed": true, "seconds": 0.032}
+{"name": "network.loopback_tcp", "passed": true, "seconds": 0.031}
+{"name": "network.unix_socket", "passed": true, "seconds": 0.027}
+{"name": "process.signal_outside_sandbox", "passed": true, "seconds": 0.027}
+{"name": "cadquery.box_step_roundtrip", "passed": true, "seconds": 2.931}
+{"name": "cadquery.svg_render", "passed": true, "seconds": 2.317}
+{
+  "report": "@QUALIFICATION_PROJECT@/sandbox/qualification/20261029T182855Z/os-results.json",
+  "passed": 40,
+  "total": 40,
+  "all_passed": true
+}
+{"name": "broker.fifth_call_rejected", "passed": true, "seconds": 0}
+{"name": "broker.ledger_read_denied", "passed": true, "seconds": 0.023}
+{"name": "broker.ledger_write_denied", "passed": true, "seconds": 0.022}
+{"name": "snapshot.read_denied", "passed": true, "seconds": 0.024}
+{"name": "snapshot.write_denied", "passed": true, "seconds": 0.024}
+{"name": "network.system_dns_resolver", "passed": true, "seconds": 0.041}
+{"name": "cadquery.png_render", "passed": true, "seconds": 2.02}
+{"name": "process.fork_denied", "passed": true, "seconds": 0.033}
+{"name": "process.libc_fork_denied", "passed": true, "seconds": 0.024}
+{"name": "process.posix_spawn_setsid_denied", "passed": true, "seconds": 0.024}
+{"name": "process.posix_spawn_setpgroup_denied", "passed": true, "seconds": 0.023}
+{"name": "process.thread_allowed", "passed": true, "seconds": 0.024}
+{"name": "device.unrelated_terminal_open", "passed": true, "seconds": 0.022}
+{"name": "device.pseudo_terminal_creation", "passed": true, "seconds": 0.027}
+{"name": "deadline.setsid_sigterm_ignored", "passed": true, "seconds": 1.21}
+{"name": "deadline.exec_replacement", "passed": true, "seconds": 1.205}
+{"name": "deadline.expired_rejects_new_work", "passed": true, "seconds": 0}
+{"name": "deadline.shared_budget_caps_worker", "passed": true, "seconds": 0}
+{"name": "deadline.relay_disconnect", "passed": true, "seconds": 0}
+{"name": "broker.close_idle_partial_auth", "passed": true, "seconds": 0}
+{"name": "broker.close_idle_authenticated", "passed": true, "seconds": 0}
+{
+  "report": "@QUALIFICATION_PROJECT@/sandbox/qualification/20261029T182855Z/v2-worker-results.json",
+  "passed": true,
+  "pass_count": 61,
+  "total": 61
+}

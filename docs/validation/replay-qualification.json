@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "scope": "Offline score and native replay qualification only; no model inference or new CAD benchmark trial. Native replay uses fresh restricted rebuild/automatic measurement plus historical protected operator review.",
+  "score_only": {
+    "command": "python3 scripts/replay.py --mode score",
+    "status": "requires_review",
+    "confirmed_correct": 60,
+    "denominator": 61,
+    "unresolved": [
+      "S3D9"
+    ],
+    "recorded_outcome_differences": [],
+    "fresh_geometry_measured": false
+  },
+  "portable_tests": {
+    "command": "python3 -m unittest discover -s tests -p test_replay.py -v",
+    "passed": 15,
+    "total": 15,
+    "coverage": [
+      "score recomputation and unresolved item preservation",
+      "CAD/platform imports and subprocesses forbidden in score mode",
+      "changed numeric measurement changes outcome",
+      "through-condition failure overrides matching diameter",
+      "snapshot/rubric/review bindings and recorded metadata hashes",
+      "extra files, modified bytes, symlinks, unknown criteria, unreasoned overrides",
+      "macOS requirement and project/runtime/repository separation",
+      "new materialization preserves exact rubric with distinct local freeze"
+    ]
+  },
+  "native_replay": {
+    "platform": "macOS arm64",
+    "runtime": "Existing previously installed Python3.12.14/CadQuery2.8.0/OCP7.9.3.1.1 runtime; setup installer is qualified separately.",
+    "command": "python3 scripts/replay.py --mode full --project-root <new-local-project> --runtime-root <installed-runtime>",
+    "status": "requires_review",
+    "confirmed_correct": 60,
+    "denominator": 61,
+    "unresolved": [
+      "S3D9"
+    ],
+    "recorded_outcome_differences": [],
+    "fresh_geometry_measured": true,
+    "rebuild_status": "pass",
+    "rebuild_geometry_comparison": "pass",
+    "rebuild_worker_reaped": true,
+    "analysis_worker_reaped": true,
+    "worker_network_and_fork_policy": "Materialized original restricted Seatbelt worker policy, executed through unchanged execution.run_isolated.",
+    "local_evaluator_freeze_sha256": "70df267062e95080fd22792b41bc3d18c480bb1a3fdf41d1f0376536b0e5e795",
+    "historical_evaluator_freeze_sha256": "c82dc5149b46b39312ed774d86c4ed34076fb141c6ca06c551814239661679ca"
+  },
+  "snapshot_sha256": "fb664635c2878d731481d4ceaeecc3690d6a634d9c6d4f8ba5da4b9a39c65c66",
+  "rubric_sha256": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+  "qualified_source_sha256": {
+    "scripts/replay.py": "6d9491c8f46cb55c63419d91912383dea5f02f84781bee9952a75525c126e460",
+    "scripts/materialize.py": "d76d25a81a92b0d37c4ac41e849d47620ad51c7d44ae4a6ddb74dd9d08bb8d7d",
+    "tests/test_replay.py": "9f29b7b17c21232fe84130ca4b7dc625184e65ab2dfb5de914ee42c008564ad2",
+    "harness/quality-provenance.json": "788265e4e164206faa319015287b1ec52d7fb4def44a0ba80fad77fb0f304f79"
+  },
+  "packaged_metadata_note": "After native replay, repository-relative evidence references were corrected in packaged metadata; numeric observations, gate decisions, rubric and sealed candidate bytes were unchanged. Score-only replay was rechecked against the final packaged metadata. Native measurement evidence is retained; this was not a new geometry run."
+}

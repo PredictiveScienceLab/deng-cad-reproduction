@@ -1,0 +1,118 @@
+{
+  "file_count": 27,
+  "files": {
+    "README.txt": {
+      "bytes": 4818,
+      "sha256": "7dd91660e2da9af0b693b36c8f94d6db1ab8bd93f71b368c26586380fb50dbbf"
+    },
+    "assembly-lines.png": {
+      "bytes": 95176,
+      "sha256": "2c228cb95f5ace2faa11f8ec047bd3648dd3dd7950cd4f34a898c324d262e844"
+    },
+    "assembly-lines.svg": {
+      "bytes": 291497,
+      "sha256": "326120c1583f0a67d81198c80b1715d46a7af60bcec5732b124f83c0413cd26a"
+    },
+    "assembly-preview.png": {
+      "bytes": 53881,
+      "sha256": "93c21c85f29de581eee6df770bae70f19a5b618b6bb47f843ebe4d24bd01551b"
+    },
+    "assembly.step": {
+      "bytes": 799371,
+      "sha256": "bb37fc3b51acecc873b3eb052ad5ca4102b08f4ee3c465d2b7d501d131b8492b"
+    },
+    "axial-lines.png": {
+      "bytes": 26873,
+      "sha256": "0ba4bcb20924cabde5ec9db4e7fc4c6d88efedff60d327c11e1737ed7a211b12"
+    },
+    "axial-lines.svg": {
+      "bytes": 30679,
+      "sha256": "7c50c7e673a0de66eb0e49905e15875cbd343a39163ebc5ba72a174999068ff9"
+    },
+    "axial-section.png": {
+      "bytes": 13702,
+      "sha256": "b3e20be4f8db0b44e64803543e28cf3ad7c40225f451faa07d4530ee98be3c2c"
+    },
+    "build.py": {
+      "bytes": 10149,
+      "sha256": "96ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840"
+    },
+    "dimensional-checks.json": {
+      "bytes": 11844,
+      "sha256": "79605b12b77e0be61fd01b6aa251374007a48f059bbdef411fe0bc4201913e8c"
+    },
+    "inspect_model.py": {
+      "bytes": 5918,
+      "sha256": "059e256608d3a40d06cb9478b18b630942d151c1f202c8fe9e1071310282f463"
+    },
+    "main-part.step": {
+      "bytes": 701033,
+      "sha256": "9496d40d13f162f90551ed1ba1baf13c1104436278bc4a74ee8f6a5ee43a82c8"
+    },
+    "main-part.svg": {
+      "bytes": 290300,
+      "sha256": "fb4f33b47985536e3983105f68892360dfa6dcba19062c335edf5bcdac83e24e"
+    },
+    "main-preview.png": {
+      "bytes": 60103,
+      "sha256": "9dd741131ba01e71e2c8da6ae185c5dd16ea4bca556b936065b99e18ec82872d"
+    },
+    "measurements.json": {
+      "bytes": 1002,
+      "sha256": "5d2e8165e7cf4eef2f15954f4a3668fb77158f2de2fb3163fd6582d68ca1bdc0"
+    },
+    "parameters.json": {
+      "bytes": 1266,
+      "sha256": "05ea9ad32b677868452afbebe008b28e06630c24b429f793c5d178653c4ed432"
+    },
+    "reload-measurements.json": {
+      "bytes": 1264,
+      "sha256": "a2f88329af97e0eb63aa8159f0b1a17625dab8f27555a32a7f69eabfd4edacc8"
+    },
+    "stage1-preview.png": {
+      "bytes": 49040,
+      "sha256": "53f97dff9cb4b6ec5a6f94549f8dd88e829275ff58d5c0cdb40e05c03a722cdb"
+    },
+    "stage2-preview.png": {
+      "bytes": 50134,
+      "sha256": "3643c6f860e4b9983527a20f59e295ecafb695249d1294b197dd9a0e304d5b28"
+    },
+    "stand-lines.png": {
+      "bytes": 36360,
+      "sha256": "df5fb17ad78d8225f6523ada5c0e6bdad19030d41bc123b6f0ba06be43142cac"
+    },
+    "stand-lines.svg": {
+      "bytes": 35510,
+      "sha256": "3dc53eb022d6357ced2a9cfef8ef0c20e50f9363b590c78ae5ab9960349a8cc2"
+    },
+    "stand-preview.png": {
+      "bytes": 26190,
+      "sha256": "1b98dd15e1764b651c779bda6ed1cdb169ff735dcf1b1a8215308fee2e0cbb61"
+    },
+    "stand.step": {
+      "bytes": 89256,
+      "sha256": "11a197289e573a14cfb06318051ad9848198df8ed276e2fbf300f07b81027399"
+    },
+    "step-1.step": {
+      "bytes": 118247,
+      "sha256": "f7f45527052871a9502ec29e5a1d47f2cded95cfa6b62ae7a1b68730f4c2f78c"
+    },
+    "step-2.step": {
+      "bytes": 486975,
+      "sha256": "93f4f65ed4472065523b6019ec7eb8591c24671b835b0495a26673b69db58d87"
+    },
+    "step-3.step": {
+      "bytes": 701033,
+      "sha256": "584265335f2b1072ef9d1b2f481626a63c10a77b00f63ae970ab0ba120e355eb"
+    },
+    "transverse-section.png": {
+      "bytes": 10667,
+      "sha256": "f6dc895ae21c6b9435b834e4b14a482e7e9989687373b60a5096215aa771498d"
+    }
+  },
+  "isolation_requirement": "Keep snapshot outside candidate writable mounts; same-UID host access is not isolated by file modes.",
+  "schema_version": 1,
+  "scope": "Hashes cover copied file bytes; manifest is not a root-immutable attestation.",
+  "source": "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/trials/trial-001/checkpoint-35-evaluation-work/output",
+  "writer_requirement": "Candidate writers must be stopped before snapshot; concurrent changes are screened, not atomically excluded."
+}

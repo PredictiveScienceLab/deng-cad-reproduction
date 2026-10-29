@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "trial": "trial-001",
+  "real_model_inference": true,
+  "execution_status": "finished",
+  "quality_status": "requires_review",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "started_utc": "2026-10-29T17:07:13.236527+00:00",
+  "finished_utc": "2026-10-29T17:18:29.417905+00:00",
+  "candidate_execution_seconds": 675.485948916059,
+  "elapsed_seconds_including_shutdown": 676.1801556658465,
+  "provider_requests": 29,
+  "python_image_calls": 27,
+  "geometry_check_calls": 1,
+  "cli_exit_code": 0,
+  "snapshot": "results/trial-001/output",
+  "snapshot_sha256": "fb664635c2878d731481d4ceaeecc3690d6a634d9c6d4f8ba5da4b9a39c65c66",
+  "checkpoint_interpretation": "The candidate finished before 35 minutes. Both the planned checkpoint and final reference the same sealed early-finish result; no model work occurred at minute 35.",
+  "score": {
+    "rubric_id": "deng-cad-2024-adapted61-v1",
+    "denominator": 61,
+    "status_counts": {
+      "absent": 0,
+      "correct": 60,
+      "inconclusive": 0,
+      "incorrect": 0,
+      "requires_review": 1
+    },
+    "confirmed_correct": 60,
+    "confirmed_attempted": 61,
+    "unresolved_attempt_count": 0,
+    "overall_coverage": 0.9836065573770492,
+    "completeness": 1.0,
+    "conditional_correctness": 0.9836065573770492,
+    "metrics_provisional": true,
+    "possible_coverage_interval": [
+      0.9836065573770492,
+      1.0
+    ],
+    "all_criteria_correct": false
+  },
+  "review_method": "19 automatic criteria plus 42 AI-assisted operator reviews using independent STEP measurements and source inspection. No human signoff.",
+  "gates": [
+    {
+      "id": "GATE-INTEGRITY",
+      "status": "pass"
+    },
+    {
+      "id": "GATE-REBUILD",
+      "status": "pass"
+    },
+    {
+      "id": "SUP-SEPARATE-STAND",
+      "status": "pass",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "stand.step is one valid positive-volume solid (155495.5351022963mm3); main-part.step is a separate valid solid (504630.73717243987mm3). assembly.step contains two solids; independent symmetric-difference comparisons match one to main and one to stand, both0mm3. Stand supports body at its matched faces and overlap volume0mm3."
+      ],
+      "reviewer": "Codex AI-assisted operator review; not human signoff"
+    },
+    {
+      "id": "SUP-SUPPORT-DEPENDENCIES",
+      "status": "pass",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/source-dependency-review.txt",
+        "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+        "results/trial-001/operator-review/stand/evidence/work-contact/contact-and-holes.json",
+        "results/trial-001/evaluation.json analysis.rebuild_comparison: all six export symmetric-difference volumes0mm3.",
+        "Submitted build.py SHA256 96ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840; master contact source lines91-99,110-119,180-201,211-219; shared front-hole drivers lines88-89,117-118,197-200."
+      ],
+      "reviewer": "Codex AI-assisted operator review; not human signoff"
+    },
+    {
+      "id": "SUP-CUMULATIVE-GEOMETRY",
+      "status": "pass",
+      "evidence": [
+        "results/trial-001/operator-review/stand/evidence/retention.json",
+        "results/trial-001/operator-review/stand/evidence/root-keyway.json",
+        "results/trial-001/operator-review/stand/evidence/peer-stage23-measured.json",
+        "results/trial-001/operator-review/stand/evidence/source-dependency-review.txt",
+        "Frozen automatic stage1/final measurements preserve flange/body/counterbore dimensions and hole conditions; independent final cone-face association resolves the split-bore retention ambiguity (diameter30.849899593579mm atx135). Root isolated measurements show identical stage1/final keyway planes and validity.",
+        "Independent final-vs-step2 radiator-region forward/reverse differences are both0mm3; region x[14,76],y[-31,31],z[20,95] contains exposed radiator and excludes later features. Step3/final main whole-solid differences are both0mm3. Source chain and clean rebuild bind the staged geometry; expected newly introduced cuts are not treated as retention failures."
+      ],
+      "reviewer": "Codex AI-assisted operator review; not human signoff"
+    },
+    {
+      "id": "SUP-STAND-DIMENSIONS",
+      "status": "pass",
+      "measurement": {
+        "id": "SUP-STAND-DIMENSIONS",
+        "description": "Explicit participant-sheet stand dimensions not all directly represented by the numbered grading labels",
+        "stage": 4,
+        "weight": 1,
+        "evidence": [
+          "results/trial-001/operator-review/stand/evidence/work/independent-measurements.json",
+          "Overall height80mm, base length130mm, both far slot ends x100 to upright inner face x120 ->20mm each, slot centers y=-24,+24 ->48mm. Derived from associated imported B-rep planes, not candidate parameters."
+        ],
+        "origin": "operator",
+        "status": "correct",
+        "components": [
+          {
+            "name": "overall_height",
+            "status": "correct",
+            "values": [
+              80.0
+            ],
+            "unit": "mm",
+            "acceptance_interval": [
+              79.99,
+              80.01
+            ],
+            "required_instances": 1,
+            "measured_instances": 1
+          },
+          {
+            "name": "base_length",
+            "status": "correct",
+            "values": [
+              130.0
+            ],
+            "unit": "mm",
+            "acceptance_interval": [
+              129.99,
+              130.01
+            ],
+            "required_instances": 1,
+            "measured_instances": 1
+          },
+          {
+            "name": "slot_end_to_upright_inner_face",
+            "status": "correct",
+            "values": [
+              20.0,
+              20.0
+            ],
+            "unit": "mm",
+            "acceptance_interval": [
+              19.99,
+              20.01
+            ],
+            "required_instances": 2,
+            "measured_instances": 2
+          },
+          {
+            "name": "slot_center_separation",
+            "status": "correct",
+            "values": [
+              48.0
+            ],
+            "unit": "mm",
+            "acceptance_interval": [
+              47.99,
+              48.01
+            ],
+            "required_instances": 1,
+            "measured_instances": 1
+          }
+        ],
+        "attempted": true
+      },
+      "reviewer": "Codex AI-assisted operator review; not human signoff"
+    },
+    {
+      "id": "GATE-EDITABLE-SOURCE",
+      "status": "pass",
+      "evidence": [
+        "AI-assisted operator source review of sealed build.py (SHA25696ec612f35b72177d58d0e1b55d3cc94a01c6abd926e476d96c0375f602be840): Dimensions dataclass drives explicit CadQuery primitive construction, fillets, unions, cuts and shared dependency functions. No STEP/BREP loading, encodedshape cache, opaque binary geometry or external source is used for construction. The independent clean rebuild already passed for allsix required exports. Parameter perturbation is not required by the frozen rubric."
+      ],
+      "reviewer": "Codex AI-assisted operator review; not human signoff"
+    },
+    {
+      "id": "GATE-DOCUMENTATION",
+      "status": "pass",
+      "reason": "Required nonempty README.txt; its substantive claims still require operator review"
+    }
+  ],
+  "unresolved": {
+    "id": "S3D9",
+    "diameter_mm": [
+      8.5,
+      8.5
+    ],
+    "cylindrical_depth_mm": [
+      5.0,
+      5.0
+    ],
+    "total_depth_with_drill_point_mm": [
+      7.553657630869999,
+      7.553657630867001
+    ],
+    "blind_termination_verified": true,
+    "reason": "Frozen 5 mm depth requirement does not explicitly define inclusion of drill-point length."
+  },
+  "rubric_sha256": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+  "evaluator_freeze_sha256": "c82dc5149b46b39312ed774d86c4ed34076fb141c6ca06c551814239661679ca",
+  "launch_freeze_sha256": "b4ad83a731eaa8eb62aab6d61719d6e943f7ccaa4000e7304ed0eea1a993ad9f",
+  "operator_review_sha256": "222546c2338f05b092556a2ab63e49de2158f724272fa146dcdfd391eb4909db",
+  "deliverables_zip_sha256": "c13aab4a6fd7f64bfe8f5f9c194a4b35a3704ac9b86b2bef4d6679038b55e8d8",
+  "provenance_note": "The frozen evaluator emits static cad_trial_started=false and real_model_inference=false fields because it does not launch inference itself. These are not trial execution status. Trial status.json, gateway-audit.jsonl, and this trial wrapper record the actual live inference; raw evaluator output is preserved unchanged.",
+  "limitations": [
+    "One adapted CadQuery trial; not a replication of the Onshape human study.",
+    "One criterion remains unresolved. No rubric or tolerance was changed after seeing the result.",
+    "AI-assisted operator review is not independent human signoff."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "status": "proposed_packet_not_launched",
+  "source_url": "https://felix-deng.github.io/files/papers/jmd24.pdf",
+  "source_pdf_sha256": "cf9f4d937e3b9f83d674b090403f17c6226d9cbe8391369008eefd287a93b13f",
+  "extraction": {
+    "renderer": "pdftoppm",
+    "dpi": 350,
+    "transform": "crop only; raster content placed in fresh PDF pages"
+  },
+  "candidate_input_files": {
+    "drawings/step-1.png": "990b85731421807312070a7f6f5256982ba6ac91f0759e8562c8fd11bb61b611",
+    "drawings/step-2.png": "bb22d119b4321f5d4a6741e01b6b72f28ccd0b5953fd161ac807d3078ababede",
+    "drawings/step-3.png": "aae98e1d8880790eac0a8ee9521c4c2c0c1d58b0153233fd72aa2e95ea45d669",
+    "drawings/step-4-assembly.png": "12cdd09a422bb10a5c233ff399247ea5aa98090b89daff0bec21d1ae3771242e",
+    "drawings/step-4-stand.png": "87cd04b37cbef73ec6b26e90a26a7d0bd50d7d1b366e21e750d0e9bdc8cd42d6",
+    "drawings.pdf": "307a072a367bfdc0d541cd160a5d7cb9e795104eaba67fb635e37aea90ed4b6c",
+    "prompt.txt": "bd2531ba26660fb7d1d4e74b5699c9a6efca47295b46fcd666deea00b447fe20",
+    "source-notice.txt": "2a3e42931b86fa9c54995cf295973000fa43c7d76b5f16d58575efe15e0b9730"
+  },
+  "sheets": [
+    {
+      "file": "drawings/step-1.png",
+      "source_page_1_based": 11,
+      "source_figure": 10,
+      "crop_fraction_top_left": [
+        0.095,
+        0.445,
+        0.9,
+        0.912
+      ],
+      "crop_pixels": [
+        274,
+        1713,
+        2599,
+        3511
+      ],
+      "pixels": [
+        2325,
+        1798
+      ],
+      "sha256": "990b85731421807312070a7f6f5256982ba6ac91f0759e8562c8fd11bb61b611",
+      "label": "Step 1"
+    },
+    {
+      "file": "drawings/step-2.png",
+      "source_page_1_based": 12,
+      "source_figure": 11,
+      "crop_fraction_top_left": [
+        0.095,
+        0.039,
+        0.9,
+        0.462
+      ],
+      "crop_pixels": [
+        274,
+        150,
+        2599,
+        1779
+      ],
+      "pixels": [
+        2325,
+        1629
+      ],
+      "sha256": "bb22d119b4321f5d4a6741e01b6b72f28ccd0b5953fd161ac807d3078ababede",
+      "label": "Step 2"
+    },
+    {
+      "file": "drawings/step-3.png",
+      "source_page_1_based": 12,
+      "source_figure": 12,
+      "crop_fraction_top_left": [
+        0.095,
+        0.493,
+        0.9,
+        0.914
+      ],
+      "crop_pixels": [
+        274,
+        1898,
+        2599,
+        3519
+      ],
+      "pixels": [
+        2325,
+        1621
+      ],
+      "sha256": "aae98e1d8880790eac0a8ee9521c4c2c0c1d58b0153233fd72aa2e95ea45d669",
+      "label": "Step 3"
+    },
+    {
+      "file": "drawings/step-4-assembly.png",
+      "source_page_1_based": 13,
+      "source_figure": 13,
+      "crop_fraction_top_left": [
+        0.095,
+        0.044,
+        0.9,
+        0.459
+      ],
+      "crop_pixels": [
+        274,
+        169,
+        2599,
+        1767
+      ],
+      "pixels": [
+        2325,
+        1598
+      ],
+      "sha256": "12cdd09a422bb10a5c233ff399247ea5aa98090b89daff0bec21d1ae3771242e",
+      "label": "Step 4 \u2014 assembly"
+    },
+    {
+      "file": "drawings/step-4-stand.png",
+      "source_page_1_based": 13,
+      "source_figure": 14,
+      "crop_fraction_top_left": [
+        0.095,
+        0.487,
+        0.9,
+        0.891
+      ],
+      "crop_pixels": [
+        274,
+        1875,
+        2599,
+        3430
+      ],
+      "pixels": [
+        2325,
+        1555
+      ],
+      "sha256": "87cd04b37cbef73ec6b26e90a26a7d0bd50d7d1b366e21e750d0e9bdc8cd42d6",
+      "label": "Step 4 \u2014 stand"
+    }
+  ],
+  "exclusions": [
+    "full article",
+    "Appendix B grading figures",
+    "reference CAD",
+    "earlier trial outputs"
+  ],
+  "tool_adapters_ready": false,
+  "benchmark_launched": false
+}

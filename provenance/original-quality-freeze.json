@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "release": "deng-quality-v1",
+  "status": "FROZEN",
+  "created_utc": "2026-10-29T13:18:32.035231+00:00",
+  "scope": "19 automatic criteria plus42 protected operator review criteria;61-item adapted rubric. No CAD trial or model inference.",
+  "files": {
+    "evaluator/apply_review.py": "46f8ce0a4061b14cfc8368515a97319b0955f431a9c2085c89886e73bac1c355",
+    "evaluator/check_service.py": "3587060c3ec6e1151edb184a2d95887fac3b6c6ef380024d0aa85756e7b8c70c",
+    "evaluator/evaluate.py": "bce1ce9713ee19b047b17e9e6ce3f9aea787a564d3d28fd3b706db7468d3095f",
+    "evaluator/execution.py": "0588a2acd0927a9d6c95791d23a7a8be8d81caf9684a8b261ca4579dc7494f26",
+    "evaluator/fixtures.py": "8f86b0ff05da1bd7d69ec10c5f53b9e826415fdc6080f4f31362faad189da7ca",
+    "evaluator/geometry.py": "95880035d82fe2df6212e9c1b2776940aac0a76f95a9a40d31c486d952e8a878",
+    "evaluator/integrity.py": "7a5f7a93ec00592281792399328bb436c9bd586f4895229dbfd23a31a5acd2bf",
+    "evaluator/qualify_geometry.py": "7dc71e2b6a274619217b435998a5246c1b24a81ca21e31b6267f864f06bdd639",
+    "evaluator/qualify_pipeline.py": "f5413361c91824344496cb5b81693b9e6554d7e04030f0c3f39487e81d562f21",
+    "evaluator/qualify_units.py": "47bfa8a8f73459f4f7c259ca082a72b8d11db6bc6eaa9c0c6d379e35cecb6a8b",
+    "evaluator/rebuild.py": "692d265b3848b9cb6d4820e31240322cd7b0cc266885956061cecd2be9ab338d",
+    "evaluator/render_views.py": "23ec4767e5cb88617db2955f36f8626ea52d16abe57a3b7f7514c2c003a2aa7e",
+    "evaluator/scoring.py": "24775495a3c2d39143a4345329c93047504c3b9fbc4bda5dfba46ab9abfd47f5",
+    "evaluator/test_check_service.py": "ae882433e34444093bf027e4e32c2375009f59e8d99dbf6ffa77a11d6e479cdf",
+    "evaluator/test_geometry.py": "256a323d0d8893ea29d616b7d6ede849fb604c073ea1dacf8195a2edc04793b3",
+    "evaluator/test_integrity.py": "927591618645c57ba87c9984512fd54872d0ebb97b706051a5ac4c6f1e5328e7",
+    "evaluator/test_scoring.py": "751be91b825f07e4f397fd7deeb294d5f079d5b5562eb3b72763afaef41c7da2",
+    "evaluator/write_quality_report.py": "dcfa3894657997d1550139aa48c0531250607cc7aa726c9465b569465396e407",
+    "frozen/rubric.json": "6eb1df6f9c22f36fd990f582637a64caddda09322156012f12b7a745cdbef2c3",
+    "frozen/source-audit.txt": "c1357c7510a7d1aad3f4733e3dbdd2949f70b6b4ea62dab5b33ac8ea723ae7e2",
+    "README.txt": "308c9ed8763fd75d25b2c05195874ffe935bd3366791a221e3626f79ad26dff8"
+  },
+  "external_dependencies": {
+    "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/sandbox/controller/controller.py": "ebf5ffa74006f6d1a2de97e5ef58f36f7fb09b4f671fbc2e8b6397c80cbecf89",
+    "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/sandbox/controller/v2/worker_supervisor.py": "90c33add79810097c2860432ad799ae96d95c753c4cf251e415fcb313625a9c7",
+    "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/sandbox/controller/v2/worker.sb": "fc3006060bd4fc01a6cb2686a6b995d6fe6c406f091f5abf558cf153e14796d7",
+    "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/sandbox/control/candidate-environment.json": "03cc9e089ba5cc5038e4b71909b521d71424a60093532d975b99317ebd29fc26",
+    "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/sandbox/runtime-manifest.json": "34d1b0effb0f54692b7a7512b257714e0d7d122577dcf9de6adc9b4ef8a6ecb1",
+    "/Users/ebilionis/Dropbox/PredictiveScienceLab/Projects/deng-cad-2024/source/deng-2024.pdf": "cf9f4d937e3b9f83d674b090403f17c6226d9cbe8391369008eefd287a93b13f"
+  },
+  "runtime": "Python3.12.14;CadQuery2.8.0;existing frozen runtime-v1",
+  "change_policy": "Any code, rubric or tolerance change requires a new recorded freeze and affected qualification; candidate results cannot motivate an undocumented rubric change.",
+  "qualification_repair": {
+    "previous_freeze_sha256": "791f4487d2de99b9fd5b5c21452b13d23e3efd85d1fd6c3fecd4ccf2f8446f3f",
+    "reason": "The complete pipeline exposed Matplotlib shade=True failing with edgecolors=none. Use a valid edge color with zero linewidth; scoring and rubric unchanged.",
+    "failed_qualification": "qualification/pipeline-20261029T131656/summary.json"
+  }
+}

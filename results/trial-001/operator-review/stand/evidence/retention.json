@@ -1,0 +1,51 @@
+{
+  "stage1_automatic_file": "results/trial-001/evaluation.json",
+  "automatic_final_bore_status": "requires_review due to split conical faces, independently resolved for retention below",
+  "automatic_scoring_behavior": "The frozen _observations adapter retains the correct stage1 S1D4 observation as a fallback because final_stage1 S1D4 is requires_review. This retention evidence does not silently reclassify the automatic final association or override the numbered criterion.",
+  "final_main_cone_faces": [
+    24,
+    45
+  ],
+  "analytic_cone": {
+    "radius": 22.5,
+    "semi_angle_rad": 0.05235987755983,
+    "axis": [
+      -1.0,
+      -0.0,
+      -0.0
+    ],
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "apex": [
+      429.3255754738838,
+      0.0,
+      0.0
+    ]
+  },
+  "counterbore_shoulder_x_mm": 135,
+  "final_junction_diameter_mm": 30.849899593578844,
+  "keyway_evidence": "results/trial-001/operator-review/root/work/keyway.json",
+  "stage2_preservation_region": {
+    "box": [
+      14,
+      76,
+      -31,
+      31,
+      20,
+      95
+    ],
+    "rationale": "Contains the entire exposed radiator; excludes later tabs, side holes and tilted port by independently measured feature extents. Same imported frame in both exports.",
+    "forward_difference_mm3": 0.0,
+    "reverse_difference_mm3": 0.0,
+    "first_volume_mm3": 152060.24002615162,
+    "second_volume_mm3": 152060.24002615162
+  },
+  "stage3_main_difference": {
+    "missing": 0.0,
+    "excess": 0.0
+  },
+  "source_chain_evidence": "results/trial-001/operator-review/stand/evidence/source-dependency-review.txt"
+}

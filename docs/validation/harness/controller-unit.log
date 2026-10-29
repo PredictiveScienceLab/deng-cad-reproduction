@@ -1,0 +1,20 @@
+test_bounded_normal_process (test_controller.ControllerTests.test_bounded_normal_process) ... ok
+test_concurrent_instances_allow_exactly_four (test_controller.ControllerTests.test_concurrent_instances_allow_exactly_four) ... ok
+test_failed_and_abandoned_reservations_consume_quota (test_controller.ControllerTests.test_failed_and_abandoned_reservations_consume_quota) ... ok
+test_four_checks_persist_and_fifth_does_not_invoke (test_controller.ControllerTests.test_four_checks_persist_and_fifth_does_not_invoke) ... ok
+test_group_probe_permission_error_does_not_skip_reaping (test_controller.ControllerTests.test_group_probe_permission_error_does_not_skip_reaping) ... ok
+test_group_signal_permission_error_uses_direct_leader_cleanup (test_controller.ControllerTests.test_group_signal_permission_error_uses_direct_leader_cleanup) ... ok
+test_independent_processes_share_four_reservations (test_controller.ControllerTests.test_independent_processes_share_four_reservations) ... ok
+test_ledger_and_lock_symlinks_are_rejected (test_controller.ControllerTests.test_ledger_and_lock_symlinks_are_rejected) ... ok
+test_ledger_cannot_be_inside_workspace_or_reset_when_malformed (test_controller.ControllerTests.test_ledger_cannot_be_inside_workspace_or_reset_when_malformed) ... ok
+test_setsid_escape_is_reported_and_explicitly_cleaned_by_test (test_controller.ControllerTests.test_setsid_escape_is_reported_and_explicitly_cleaned_by_test) ... ok
+test_snapshot_hashes_nested_files_and_read_only_modes (test_controller.ControllerTests.test_snapshot_hashes_nested_files_and_read_only_modes) ... ok
+test_snapshot_rejects_special_files (test_controller.ControllerTests.test_snapshot_rejects_special_files) ... ok
+test_snapshot_rejects_symlinks_in_tree_and_source_path (test_controller.ControllerTests.test_snapshot_rejects_symlinks_in_tree_and_source_path) ... ok
+test_snapshot_rejects_traversal_existing_target_and_candidate_destination (test_controller.ControllerTests.test_snapshot_rejects_traversal_existing_target_and_candidate_destination) ... ok
+test_timeout_kills_child_ignoring_sigterm_even_after_leader_dies (test_controller.ControllerTests.test_timeout_kills_child_ignoring_sigterm_even_after_leader_dies) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 4.005s
+
+OK

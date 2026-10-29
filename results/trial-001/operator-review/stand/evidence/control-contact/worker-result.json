@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "success": true,
+  "status": "completed",
+  "launched": true,
+  "pid": 83366,
+  "returncode": 0,
+  "worker_reaped": true,
+  "timeout_seconds": 60,
+  "effective_deadline_monotonic": 1438377.51934075,
+  "deadline_source": "trial",
+  "containment": "direct_unreaped_child_pid_requires_kernel_no_fork_policy",
+  "controller_death_protection": false,
+  "cleanup_signals": [],
+  "cleanup_errors": [],
+  "stdout": "[Errno 1] Operation not permitted: '/Library/Fonts'\n[Errno 1] Operation not permitted: '/System/Library/Fonts'\n{\"shoulder_contact\": {\"stand_face_index\": 26, \"area\": 58.421726124144364, \"common_area\": 58.421726124144364, \"gap_distance_mm\": 4.321223057804992e-13}, \"holes\": [{\"axis_y\": -25, \"axis_z\": -25, \"diameter_mm\": 10, \"x_extent\": [120, 142], \"stand_intersection_volume_mm3\": 0.0, \"main_intersection_volume_mm3\": 0.0}, {\"axis_y\": 25, \"axis_z\": -25, \"diameter_mm\": 10, \"x_extent\": [120, 142], \"stand_intersection_volume_mm3\": 0.0, \"main_intersection_volume_mm3\": 0.0}]}\n",
+  "stderr": "",
+  "output_bytes_stored": 573,
+  "output_limit_bytes": 2097152,
+  "output_truncated": false,
+  "capture_errors": [],
+  "stdin_bytes_supplied": 916,
+  "stdin_bytes_written": 916,
+  "stdin_error": null,
+  "elapsed_seconds": 1.7363413751590997,
+  "output_bytes_observed": {
+    "stdout": 573,
+    "stderr": 0
+  },
+  "policy_sha256": "6c0d3ef515d2f45a21b380b8881d4e9c380de84b5712bb064517370ca8e0062a",
+  "source_sha256": "cbbb215d59a7189da058860d9dc43b79a48e0f20c71f3ae6b23bd9e7605c8676"
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "report": "@QUALIFICATION_PROJECT@/sandbox/controller/v3/cli-qualification-20261029T182909/report.json",
+  "probes": 7,
+  "handler_errors": []
+}
